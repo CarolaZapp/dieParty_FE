@@ -1,0 +1,120 @@
+/* desktop */
+
+.containerIntro {
+  color: var(--font-six);
+  text-align: center;
+  background-image: url("../images/bokeh-g215e54012_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.fadeBackground {
+  background: var(--bg-two-a);
+  min-height: 100vh;
+}
+
+.center {
+  display: flex;
+  min-height: min-content;
+}
+
+.section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 8rem;
+  align-items: center;
+  width: 30%;
+  height: min-content;
+  font-size: 1.5rem;
+  padding-left: 5%;
+}
+
+.section-one h1 {
+  font-size: 3rem;
+}
+
+.section-device {
+  width: 70%;
+  padding-right: 5%;
+}
+
+/*  for laptops, tablets and phones (extra large) */
+@media screen and (max-width: 1365px) {
+  .section-one {
+    padding-left: 4%;
+    margin-top: 4rem;
+  }
+  .section-device {
+    padding-right: 4%;
+  }
+}
+
+/*  for tablets and phones (large)*/
+@media screen and (max-width: 1023px) {
+  .section-one {
+    width: 40%;
+    padding-left: 3%;
+    font-size: 1.25rem;
+  }
+  .section-one h1 {
+    font-size: 2.5rem;
+  }
+  .section-device {
+    width: 60%;
+    padding-right: 3%;
+  }
+}
+
+/*  for smaller tablets and phones  - special*/
+@media screen and (max-width: 859px) {
+  .section-one {
+    padding-left: 2%;
+    font-size: 1.125rem;
+  }
+
+  .section-device {
+    padding-right: 2%;
+    font-size: 2.25rem;
+  }
+}
+
+/* for phones  - special*/
+@media screen and (max-width: 694px) {
+  .center {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-one {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 3rem;
+    width: 96%;
+    min-height: min-content;
+  }
+  .section-device {
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;
+    min-height: min-content;
+  }
+}
+
+/* for small phones - special */
+@media screen and (max-width: 529px) {
+  .section-one {
+    padding-left: 2%;
+    font-size: 1rem;
+    min-height: min-content;
+  }
+  .section-one h1 {
+    font-size: 1.75rem;
+  }
+  .section-device {
+    width: 96%;
+    min-height: min-content;
+  }
+}

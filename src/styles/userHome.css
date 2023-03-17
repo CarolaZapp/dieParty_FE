@@ -1,0 +1,267 @@
+/* desktop */
+
+.backimg {
+  background-image: url("../images/rose-petals-g5cbd2a9f2_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.containerUserHome {
+  position: relative;
+  min-height: 100vh;
+}
+
+.leftStripe {
+  background-color: var(--bg-one);
+  color: var(--font-one);
+  width: 25%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightStripe {
+  background-color: var(--bg-one);
+  width: 50%;
+  min-height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.rightHeadline {
+  color: var(--font-one);
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+hr {
+  border: 1px solid var(--font-one);
+  width: 60%;
+}
+
+.rightTitle {
+  color: var(--font-one);
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.leftTitle {
+  color: var(--font-one);
+  margin: 0 auto;
+  padding: 1rem;
+  padding-left: 2rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.event {
+  color: var(--font-one);
+  padding-left: 3rem;
+  margin: 0;
+}
+
+.timeH2 {
+  margin: 1rem;
+  font-size: 1rem;
+  color: var(--font-four);
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: var(--bg-four);
+  top: 0;
+  bottom: 0;
+  margin-left: 5rem;
+}
+
+/* Container around content */
+.containerRight {
+  padding: 5px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 60%;
+  margin-left: 5rem;
+}
+
+/* The circles on the timeline */
+.containerRight::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: var(--bg-two);
+  border: 4px solid var(--bg-four);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--font-one);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--font-one) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -0.8rem;
+}
+
+/* The actual content */
+.contentTimeline {
+  padding: 10px 10px;
+  background-color: var(--bg-two);
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+/*  for laptops, tablets and phones (extra large) */
+@media screen and (max-width: 1365px) {
+  .leftStripe {
+    width: 30%;
+  }
+}
+
+/*  for tablets and phones (large)*/
+@media screen and (max-width: 1023px) {
+  .leftStripe {
+    width: 35%;
+  }
+}
+
+/*  for smaller tablets and phones  - special-special*/
+/* I am not happy with this solution, but must be enough for MVP this time ... :-(  */
+@media screen and (max-width: 915px) {
+  .leftStripe {
+    width: 100%;
+    height: min-content;
+    position: relative;
+    left: 0%;
+    text-align: center;
+  }
+  .leftTitle {
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+  }
+  .event {
+    padding: 0;
+  }
+
+  .rightStripe {
+    width: 100%;
+    height: min-content;
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftTitle {
+    font-size: 1.5rem;
+  }
+}
+
+/*  for smaller tablets and phones  - special*/
+/* stay for update.... */
+
+/* @media screen and (max-width: 859px) {
+
+  .leftStripe {
+    width: 40%;
+  }
+  .leftTitle {
+    font-size: 1.125rem;
+  }
+  .rightHeadline {
+    font-size: 2.25rem;
+  }
+  .rightTitle {
+    font-size: 1.5rem;
+  }
+  .timeline {
+    max-width: 100%;
+  }
+  .timeline::after {
+    margin-left: 3rem;
+  }
+  .contentTimeline {
+    margin-bottom: 1rem;
+  }
+
+  .containerRight {
+    margin-left: 3rem;
+  }
+} */
+
+/* for phones  - special*/
+/* stay for update.... */
+/* @media screen and (max-width: 694px) {
+  .leftStripe {
+    width: 100%;
+    height: min-content;
+    position: relative;
+    left: 0%;
+    text-align: center;
+  }
+  .leftTitle {
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+  }
+  .event {
+    padding: 0;
+  }
+
+  .rightStripe {
+    width: 100%;
+    height: min-content;
+    position: relative;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftTitle {
+    font-size: 1.5rem;
+  }
+} */
+
+/* for small phones - special */
+@media screen and (max-width: 529px) {
+  .timeH2 {
+    font-size: 0.75rem;
+  }
+}

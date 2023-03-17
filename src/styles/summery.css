@@ -1,0 +1,24 @@
+/*  will follow soon... :-) not included at MVP */
+
+.centerStripeSummery {
+  width: 70%;
+  background-color: var(--bg-one);
+  margin: auto;
+  min-height: 100vh;
+}
+
+.containerSummery {
+  color: var(--font-one);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.summery {
+  border: 2px solid green;
+  display: flex;
+  margin: 0;
+}
+
+.summery p {
+  padding-right: 2rem;
+}

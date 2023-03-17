@@ -1,0 +1,266 @@
+/* desktop */
+
+.background,
+.backgroundD1,
+.backgroundD2,
+.backgroundD3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.background {
+  background-image: url("../images/bokeh-g215e54012_1920.jpg");
+}
+
+.backgroundD1 {
+  background-image: url("../images/happy-birthday-g1b705ed30_1920.jpg");
+}
+
+.backgroundD2 {
+  background-image: url("../images/rose-petals-g5cbd2a9f2_1920.jpg");
+}
+
+.backgroundD3 {
+  background-image: url("../images/happy-birthday-g97903f2b0_1920.jpg");
+}
+
+.backgroundFade {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.centerStripe,
+.centerStripeD1,
+.centerStripeD2,
+.centerStripeD3 {
+  min-width: 320px;
+  max-width: 720px;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.centerStripe {
+  background-color: var(--bg-thirteen);
+}
+.centerStripeD1 {
+  background-color: var(--bg-eleven);
+}
+.centerStripeD2 {
+  background-color: var(--bg-one);
+}
+.centerStripeD3 {
+  background-color: var(--bg-nine);
+}
+
+.headline {
+  color: var(--font-one);
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+hr {
+  border: 1px solid var(--font-one);
+  width: 60%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.input,
+.select {
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0;
+  color: var(--font-four);
+  background-color: var(--bg-ten);
+  border-bottom: 2px solid var(--font-one);
+}
+
+::placeholder {
+  color: var(--font-four);
+  font-family: Montserrat;
+  font-size: 0.8rem;
+}
+
+.input:hover,
+.select:hover,
+.selectGuests:hover {
+  box-shadow: 4px 4px 4px var(--shadow-one);
+}
+
+.input:focus,
+.select:focus,
+.selectGuests:focus {
+  background-color: var(--bg-two);
+  outline: none;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 4px var(--shadow-two);
+}
+
+.navTo {
+  color: var(--font-one);
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-bottom: 4rem;
+}
+
+.guestFeedback {
+  color: var(--font-one);
+  margin: 0;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+/* //// Register Guest */
+.paragraph {
+  color: var(--font-one);
+  text-align: center;
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+.radio {
+  text-align: center;
+  margin: 1rem;
+}
+
+[type="radio"],
+[type="checkbox"] {
+  accent-color: var(--font-six);
+}
+
+.labelRadio {
+  margin: 1rem;
+  color: var(--font-one);
+  text-align: center;
+}
+
+.labelSelect {
+  color: var(--font-one);
+  margin: 0.5rem;
+}
+
+.guests {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectGuests {
+  max-width: 50%;
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0;
+  color: var(--font-four);
+  background-color: var(--bg-one);
+  border-bottom: 2px solid var(--font-one);
+}
+
+.textarea {
+  border: 2px solid var(--font-one);
+  border-radius: 0.5rem;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.textarea:focus {
+  background-color: var(--bg-one);
+  outline: none;
+  box-shadow: 4px 4px 4px var(--shadow-two);
+}
+
+/*  // // Create right Slide in Parts // // */
+
+.rightSideD2 {
+  width: 50%;
+  margin-left: 50%;
+  min-height: 100vh;
+}
+
+.rightSideD2 {
+  background-color: var(--bg-one);
+}
+
+.create {
+  color: var(--font-one);
+  margin: 1rem;
+}
+
+/* //  //  UserInstruction */
+
+.title,
+.text,
+.liste {
+  color: var(--font-one);
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  max-width: 450px;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.liste {
+  text-align: left;
+  font-size: 1rem;
+}
+
+/* not used here */
+/*  for laptops, tablets and phones (extra large) */
+/* @media screen and (max-width: 1365px) {} */
+
+/*  for tablets and phones (large)*/
+@media screen and (max-width: 1023px) {
+  .headline {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+/* without slide */
+/*  for smaller tablets and phones  - special*/
+@media screen and (max-width: 859px) {
+  .rightSideD2 {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+  }
+}
+
+/* for phones  - special*/
+@media screen and (max-width: 694px) {
+  .headline {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
+
+/* not used here */
+/* for small phones - special */
+/* @media screen and (max-width: 529px) {} */

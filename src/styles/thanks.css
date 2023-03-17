@@ -1,0 +1,207 @@
+/* desktop */
+
+.containerThanks {
+  background-image: url("../images/rose-petals-g5cbd2a9f2_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.bgFade {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.top-images,
+.center-images,
+.bottom-image {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.img-one,
+.img-two,
+.img-three,
+.img-four,
+.img-five,
+.img-six {
+  width: 424px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 2rem 1rem;
+  border-radius: 0.4rem;
+}
+
+.img-one {
+  background-image: url("../images/rose-petals-g5cbd2a9f2_1920.jpg");
+}
+
+.img-two {
+  background-image: url("../images/roses-gbb0c52006_1920.jpg");
+}
+
+.img-three {
+  background-image: url("../images/rose-petals-g5cbd2a9f2_1920.jpg");
+}
+
+.img-four {
+  background-image: url("../images/happy-birthday-gf868657b0_1920.jpg");
+}
+
+.img-five {
+  background-image: url("../images/wedding-cake-g73972b9d8_1920.jpg");
+}
+
+.img-six {
+  background-image: url("../images/flower-g8d2376bb1_1920.jpg");
+}
+
+.headline {
+  color: var(--font-six);
+  margin: 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.top-text hr {
+  border: 1px solid var(--font-six);
+  width: 40%;
+}
+
+.who {
+  color: var(--font-six);
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+  max-width: 450px;
+}
+
+.center-text-area {
+  background-color: var(--bg-one);
+  color: var(--font-one);
+  text-align: center;
+  padding: 3rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.bottom-text {
+  color: var(--font-six);
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/*  for laptops, tablets and phones (extra large) */
+@media screen and (max-width: 1365px) {
+  .img-one,
+  .img-two,
+  .img-three,
+  .img-four,
+  .img-five,
+  .img-six {
+    width: 314px;
+    height: 222px;
+  }
+  .top-text hr {
+    width: 50%;
+  }
+}
+
+/*  for tablets and phones (large)*/
+@media screen and (max-width: 1023px) {
+  .img-one,
+  .img-two,
+  .img-three,
+  .img-four,
+  .img-five,
+  .img-six {
+    width: 259px;
+    height: 173px;
+  }
+  .top-text hr {
+    width: 60%;
+  }
+}
+
+/*  for smaller tablets and phones  - special*/
+@media screen and (max-width: 859px) {
+  .img-one,
+  .img-two,
+  .img-three,
+  .img-four,
+  .img-five,
+  .img-six {
+    width: 204px;
+    height: 144px;
+  }
+  .headline {
+    font-size: 2.25rem;
+  }
+  .who,
+  .bottom-text {
+    font-size: 1.5rem;
+  }
+  .center-text-area {
+    font-size: 1.125rem;
+  }
+  .top-text hr {
+    width: 65%;
+  }
+}
+
+/* for phones  - special*/
+@media screen and (max-width: 694px) {
+  .top-images,
+  .center-images,
+  .bottom-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-one,
+  .img-two,
+  .img-three,
+  .img-four,
+  .img-five,
+  .img-six {
+    width: 424px;
+    height: 300px;
+  }
+}
+
+/* for small phones - special */
+@media screen and (max-width: 529px) {
+  .img-one,
+  .img-two,
+  .img-three,
+  .img-four,
+  .img-five,
+  .img-six {
+    width: 314px;
+    height: 222px;
+  }
+  .headline {
+    font-size: 1.5rem;
+  }
+  .who,
+  .bottom-text {
+    font-size: 1rem;
+  }
+  .center-text-area {
+    font-size: 0.75rem;
+  }
+  .top-text hr {
+    width: 70%;
+  }
+}

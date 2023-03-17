@@ -1,0 +1,62 @@
+/* desktop */
+
+.header {
+  overflow: hidden;
+  background-color: var(--bg-thirteen);
+  padding: 1rem 0.5rem;
+}
+
+.header button {
+  float: left;
+  color: var(--font-six);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background: linear-gradient(transparent, var(--bg-two), transparent);
+  box-shadow: 4px 4px 4px var(--shadow-one);
+}
+
+.header button.logo {
+  font-weight: bold;
+}
+
+.header button:hover {
+  background-color: var(--bg-six);
+  color: var(--font-four);
+}
+
+.header-right {
+  float: right;
+}
+
+/* not used here */
+/*  for laptops, tablets and phones (extra large) */
+/* @media screen and (max-width: 1365px) {} */
+
+/* not used here */
+/*  for tablets and phones (large)*/
+/* @media screen and (max-width: 1023px) {} */
+
+/* without slide */
+/*  for smaller tablets and phones  - special*/
+/* @media screen and (max-width: 859px){} */
+
+/* for phones  - special*/
+@media screen and (max-width: 694px) {
+  .header button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 8rem;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* not used here */
+/* for small phones - special */
+/* @media screen and (max-width: 529px) {} */

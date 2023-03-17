@@ -1,0 +1,130 @@
+/* desktop */
+
+.intro-one,
+.intro-two,
+.submit,
+.goto,
+.rueckmeldung,
+.userHome {
+  font-family: Montserrat;
+}
+
+.intro-one,
+.intro-two {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  color: var(--font-six);
+  background: linear-gradient(var(--bg-ten), var(--bg-two), var(--bg-ten));
+  background-color: var(--bg-thirteen);
+  box-shadow: 4px 4px 4px var(--shadow-two);
+}
+
+.intro-one {
+  width: 18rem;
+  margin-bottom: 2rem;
+}
+
+.intro-two {
+  width: 13rem;
+}
+
+.intro-one:hover,
+.intro-two:hover {
+  cursor: pointer;
+  color: var(--font-four);
+  background-color: var(--bg-six);
+  box-shadow: 4px 4px 4px var(--shadow-two);
+}
+
+.submit,
+.rueckmeldung {
+  font-size: 1rem;
+  text-transform: uppercase;
+  width: 13rem;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  color: var(--font-four);
+  background: linear-gradient(transparent, var(--bg-two), transparent);
+  box-shadow: 4px 4px 4px var(--shadow-one);
+}
+
+.submit:hover,
+.rueckmeldung:hover {
+  cursor: pointer;
+  background-color: var(--bg-two);
+  box-shadow: 4px 4px 4px var(--shadow-two);
+}
+
+.goTo {
+  color: var(--font-one);
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.rueckmeldung {
+  position: absolute;
+  bottom: 5%;
+  right: 7.5%;
+  background-color: var(--bg-one);
+}
+
+.userHome {
+  display: flex;
+  flex-direction: column;
+  color: var(--font-one);
+  text-align: left;
+  padding: 0.5rem 1rem;
+  margin: 0 2rem;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+.userHome:hover {
+  cursor: pointer;
+  color: var(--font-four);
+  background: linear-gradient(transparent, var(--bg-two), transparent);
+  box-shadow: 4px 4px 4px var(--shadow-two);
+}
+
+/* not used here */
+/*  for laptops, tablets and phones (extra large) */
+/* @media screen and (max-width: 1365px) {} */
+
+/* not used here */
+/*  for tablets and phones (large)*/
+/* @media screen and (max-width: 1023px) {} */
+
+/* not used here*/
+/*  for smaller tablets and phones  - special*/
+/* @media screen and (max-width: 859px) {} */
+
+/* for phones  - special*/
+/* I am not happy with this solution, but must be enough for MVP this time ... :-(  */
+@media screen and (max-width: 915px) {
+  .userHome {
+    text-align: center;
+    margin: auto;
+  }
+}
+
+/*  for smaller tablets and phones  - special*/
+/* stay for update.... */
+/* @media screen and (max-width: 859px) {
+  .userHome {
+    text-align: center;
+    margin: auto;
+  }
+} */
+
+/* not used here */
+/* for small phones - special */
+/* @media screen and (max-width: 529px) {} */

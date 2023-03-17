@@ -1,0 +1,99 @@
+/* desktop */
+
+.containerDesign {
+  color: var(--font-six);
+  text-align: center;
+  background-image: url("../images/bokeh-g215e54012_1920.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+.topDesign {
+  padding: 2rem;
+  font-size: 1.5rem;
+  background: var(--bg-two-a);
+}
+
+.centerDesign {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  background: var(--bg-two-a);
+}
+
+.imgD1,
+.imgD2,
+.imgD3 {
+  width: 300px;
+  height: 424px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+}
+
+.imgD1 {
+  background-position: right;
+}
+
+.imgD1 {
+  background-image: url("../images/happy-birthday-g1b705ed30_1920.jpg");
+}
+
+.imgD2 {
+  background-image: url("../images/roses-gbb0c52006_1920.jpg");
+}
+
+.imgD3 {
+  background-image: url("../images/happy-birthday-g97903f2b0_1920.jpg");
+}
+
+.imgD1:hover,
+.imgD2:hover,
+.imgD3:hover {
+  cursor: pointer;
+}
+
+/* not used here */
+/*  for laptops, tablets and phones (extra large) */
+/* @media screen and (max-width: 1365px) {
+} */
+
+/*  for tablets and phones (large)*/
+@media screen and (max-width: 1023px) {
+  .imgD1,
+  .imgD2,
+  .imgD3 {
+    width: 212px;
+    height: 300px;
+  }
+}
+
+/* not used here */
+/*  for smaller tablets and phones  - special*/
+/* @media screen and (max-width: 859px) {
+} */
+
+/* for phones  - special*/
+@media screen and (max-width: 694px) {
+  .centerDesign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgD1,
+  .imgD2,
+  .imgD3 {
+    width: 212px;
+    height: 300px;
+  }
+}
+
+/* not used here */
+/* for small phones - special */
+/* @media screen and (max-width: 529px) {
+} */

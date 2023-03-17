@@ -1,0 +1,248 @@
+:root {
+  /* background colors */
+  --bg-one: rgb(199, 136, 184);
+  --bg-two: white;
+  --bg-two-a: rgba(255, 255, 255, 0.7);
+  --bg-three: rgb(56, 76, 110);
+  --bg-four: rgb(217, 217, 217);
+  --bg-five: black;
+  --bg-six: rgb(167, 129, 40);
+  --bg-seven: rgb(37, 37, 37);
+  --bg-eight: rgb(107, 107, 107);
+  --bg-nine: rgb(98, 85, 79);
+  --bg-ten: transparent;
+  --bg-eleven: rgb(146, 203, 56);
+  --bg-twelve: rgb(117, 93, 78);
+  --bg-thirteen: rgb(220, 202, 179);
+
+  /* font colors */
+  --font-one: white;
+  --font-two: rgb(199, 136, 184);
+  --font-three: rgb(56, 76, 110);
+  --font-four: rgb(107, 107, 107);
+  --font-five: black;
+  --font-six: rgb(167, 129, 40);
+  --font-seven: rgb(168, 169, 173);
+
+  /* shadow colors */
+  --shadow-one: white;
+  --shadow-two: rgb(107, 107, 107);
+  --shadow-three: rgb(37, 37, 37);
+  --shadow-four: rgb(199, 136, 184);
+  --shadow-five: black;
+  --shadow-six: rgb(167, 129, 40);
+}
+
+/* not used at MVP - planned for Guestbook  */
+/* architects-daughter-regular - latin */
+@font-face {
+  font-family: "Architects Daughter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/architects-daughter-v18-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./fonts/architects-daughter-v18-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/architects-daughter-v18-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./fonts/architects-daughter-v18-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("./fonts/architects-daughter-v18-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/architects-daughter-v18-latin-regular.svg#ArchitectsDaughter")
+      format("svg"); /* Legacy iOS */
+}
+
+/* not used at MVP - planned for Guestbook  */
+/* arizonia-regular - latin */
+@font-face {
+  font-family: "Arizonia";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/arizonia-v19-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./fonts/arizonia-v19-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/arizonia-v19-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/arizonia-v19-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./fonts/arizonia-v19-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/arizonia-v19-latin-regular.svg#Arizonia") format("svg"); /* Legacy iOS */
+}
+
+/* bonheur-royale-regular - latin */
+@font-face {
+  font-family: "Bonheur Royale";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bonheur-royale-v9-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/bonheur-royale-v9-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bonheur-royale-v9-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/bonheur-royale-v9-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/bonheur-royale-v9-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bonheur-royale-v9-latin-regular.svg#BonheurRoyale")
+      format("svg"); /* Legacy iOS */
+}
+
+/* not used at MVP - planned for Guestbook  */
+/* englebert-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Englebert";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/englebert-v17-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/englebert-v17-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/englebert-v17-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/englebert-v17-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/englebert-v17-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/englebert-v17-latin-regular.svg#Englebert") format("svg"); /* Legacy iOS */
+}
+
+/* not used at MVP - planned for Guestbook  */
+/* exo-2-regular - latin */
+@font-face {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/exo-2-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/exo-2-v20-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/exo-2-v20-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/exo-2-v20-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/exo-2-v20-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/exo-2-v20-latin-regular.svg#Exo2")
+      format("svg"); /* Legacy iOS */
+}
+
+/* not used at MVP - planned for Guestbook  */
+/* great-vibes-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Great Vibes";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/great-vibes-v14-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/great-vibes-v14-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/great-vibes-v14-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/great-vibes-v14-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/great-vibes-v14-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/great-vibes-v14-latin-regular.svg#GreatVibes") format("svg"); /* Legacy iOS */
+}
+
+/* not used at MVP - planned for Guestbook  */
+/* kaushan-script-regular - latin */
+@font-face {
+  font-family: "Kaushan Script";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kaushan-script-v14-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/kaushan-script-v14-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/kaushan-script-v14-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/kaushan-script-v14-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/kaushan-script-v14-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/kaushan-script-v14-latin-regular.svg#KaushanScript")
+      format("svg"); /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/montserrat-v25-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v25-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/montserrat-v25-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v25-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v25-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+/* not used at MVP - planned for Guestbook  */
+/* oregano-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Oregano";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oregano-v13-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/oregano-v13-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/oregano-v13-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/oregano-v13-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/oregano-v13-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/oregano-v13-latin-regular.svg#Oregano") format("svg"); /* Legacy iOS */
+}
+
+/* not used at MVP - planned for Guestbook  */
+/* raleway-regular - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/raleway-v28-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/raleway-v28-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/raleway-v28-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/raleway-v28-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/raleway-v28-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/raleway-v28-latin-regular.svg#Raleway") format("svg"); /* Legacy iOS */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  min-width: 320px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}

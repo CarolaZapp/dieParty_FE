@@ -1,0 +1,66 @@
+/* desktop */
+
+.centerStripeTable {
+  width: 70%;
+  background-color: var(--bg-one);
+  margin: auto;
+  min-height: 100vh;
+}
+
+.tableContact {
+  width: 90%;
+  margin: 2rem auto;
+  /* overflow: auto; */
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  padding: 10px;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid var(--font-four);
+  color: var(--font-four);
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+th {
+  background-color: var(--bg-four);
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-four);
+}
+
+tr:nth-child(odd) {
+  background-color: var(--bg-two);
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* not used here */
+/*  for laptops, tablets and phones (extra large) */
+/* @media screen and (max-width: 1365px) {} */
+
+/* not used here */
+/*  for tablets and phones (large)*/
+/* @media screen and (max-width: 1023px) {} */
+
+/* without slide */
+/*  for smaller tablets and phones  - special*/
+/* @media screen and (max-width: 859px) {} */
+
+/* not used here */
+/* for phones  - special*/
+/* @media screen and (max-width: 694px) {} */
+
+/* not used here */
+/* for small phones - special */
+/* @media screen and (max-width: 529px) {} */

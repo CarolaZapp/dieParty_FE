@@ -1,0 +1,199 @@
+/* desktop */
+
+.bgimg-one,
+.bgimg-two,
+.bgimg-three {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-one {
+  background-image: url("../images/roses-gbb0c52006_1920.jpg");
+  min-height: 100vh;
+}
+
+.bgimg-two {
+  background-image: url("../images/rose-petals-g5cbd2a9f2_1920.jpg");
+  min-height: 400px;
+}
+
+.bgimg-three {
+  background-image: url("../images/wedding-cake-g73972b9d8_1920.jpg");
+  min-height: 400px;
+}
+
+.caption-one {
+  position: absolute;
+  left: 5%;
+  top: 7.5%;
+  color: var(--font-one);
+  font-family: Bonheur Royale;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  background-color: transparent;
+  color: var(--font-one);
+}
+
+.caption-last {
+  position: absolute;
+  left: 0%;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: var(--font-one);
+  font-family: Bonheur Royale;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+}
+
+.bottom {
+  position: absolute;
+  left: 0%;
+  bottom: 3%;
+  width: 100%;
+  text-align: center;
+  color: var(--font-one);
+  font-family: Bonheur Royale;
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+}
+
+.demoH3 {
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.demoBox {
+  color: var(--font-three);
+  background-color: var(--bg-two);
+  text-align: center;
+  padding: 3rem 4rem;
+  font-size: 1.2rem;
+}
+
+.textBox {
+  position: relative;
+}
+
+.text {
+  color: var(--font-one);
+  background-color: var(--bg-three);
+  text-align: center;
+  padding: 2rem 4rem;
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* not used here */
+/*  for laptops, tablets and phones (extra large) */
+/* @media screen and (max-width: 1365px) {} */
+
+/* Turn off parallax scrolling */
+/*  for tablets and phones (large)*/
+@media screen and (max-width: 1023px) {
+  .bgimg-one,
+  .bgimg-two,
+  .bgimg-three {
+    background-attachment: scroll;
+  }
+  .caption-one {
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .caption {
+    top: 15%;
+    font-size: 1.5rem;
+  }
+  .caption-last {
+    font-size: 3rem;
+  }
+  .bottom {
+    font-size: 3rem;
+    bottom: 2%;
+  }
+}
+
+/* not used here */
+/*  for smaller tablets and phones  - special*/
+@media screen and (max-width: 859px) {
+  .caption-one {
+    font-size: 3rem;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+
+  .caption-last {
+    font-size: 2.5rem;
+  }
+
+  .bottom {
+    font-size: 3rem;
+    bottom: 7%;
+  }
+}
+
+/* phones */
+@media screen and (max-width: 694px) {
+  .caption-one {
+    font-size: 2.5rem;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+
+  .caption-last {
+    font-size: 2rem;
+  }
+
+  .bottom {
+    font-size: 3rem;
+    bottom: 10%;
+  }
+}
+
+/* for small phones - special */
+@media screen and (max-width: 529px) {
+  .caption-one {
+    font-size: 2rem;
+  }
+  .caption {
+    font-size: 0.75rem;
+  }
+
+  .caption-last {
+    font-size: 1.75rem;
+  }
+
+  .bottom {
+    font-size: 2.5rem;
+  }
+}
