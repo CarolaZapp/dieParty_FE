@@ -17,8 +17,12 @@ const UserLogin = () => {
   const [formData, setFormData] = useState(Initial);
 
   // handleClick
-  const handleClickRegister = () => {
-    navigate("/userRegister");
+  // const handleClickRegister = () => {
+  //   navigate("/userRegister");
+  // };
+
+  const handleClickAuswahl = () => {
+    navigate("/chooseDesign");
   };
 
   // handleChange
@@ -79,14 +83,20 @@ const UserLogin = () => {
                 value={formData.password}
                 required
               />
-              <button className="submit">Senden</button>
+              <button className="submit">Anmelden</button>
             </form>
             <div className={styles.navTo}>
               <h5>
                 Noch kein <strong>die P@rty</strong> Kunde?
-                <button className="goTo" onClick={handleClickRegister}>
+                {/* <button className="goTo" onClick={handleClickRegister}>
                   <strong> Registrierung </strong>
-                </button>
+                </button> */}
+                <p>
+                  Bitte zunächst eine Designvorlage auswählen!
+                  <button className="goTo" onClick={handleClickAuswahl}>
+                    <strong> zur Auswahl </strong>
+                  </button>
+                </p>
               </h5>
             </div>
           </div>
