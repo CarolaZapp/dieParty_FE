@@ -24,14 +24,14 @@ const HeaderIntro = () => {
         >
           Anmeldung
         </button>
-        <button
+        {/* <button
           className="nav"
           onClick={() => {
             navigate("/userRegister");
           }}
         >
           Registrierung
-        </button>
+        </button> */}
       </div>
     </div>
   );
