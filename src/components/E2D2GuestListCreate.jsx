@@ -17,7 +17,7 @@ const E2D2GuestListCreate = () => {
     zipCode: "",
     city: "",
     telephone: "",
-    birthday: "",
+    // birthday: "",
     email: "",
     group: "",
   };
@@ -60,7 +60,7 @@ const E2D2GuestListCreate = () => {
         <div className={styles.centerStripeD2}>
           <h1 className={styles.headline}>Geburtstag</h1>
           <hr />
-          <h2 className={styles.title}>Gästeliste anlegen</h2>
+          <h2 className={styles.title}>Gast hinzufügen und einladen</h2>
           <form className={styles.form} onSubmit={handleSubmit}>
             <input
               className={styles.input}
@@ -125,7 +125,7 @@ const E2D2GuestListCreate = () => {
               value={formData.telephone}
               required
             />
-            <input
+            {/* <input
               className={styles.input}
               type="text"
               name="birthday"
@@ -133,7 +133,7 @@ const E2D2GuestListCreate = () => {
               onChange={handleChange}
               value={formData.birthday}
               required
-            />
+            /> */}
             <input
               className={styles.input}
               type="email"
@@ -161,7 +161,7 @@ const E2D2GuestListCreate = () => {
                 <option value="bekannte">Bekannte</option>
               </select>
             </div>
-            <button className="submit">Senden</button>
+            <button className="submitLarge">Einladung abschicken</button>
           </form>
         </div>
       </div>
