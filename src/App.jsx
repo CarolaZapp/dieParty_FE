@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Intro from "./components/Intro.jsx";
 import ChooseEvent from "./components/ChooseEvent.jsx";
 import ChooseDesign from "./components/ChooseDesign.jsx";
-import UserRegister from "./components/UserRegister.jsx";
+// import UserRegister from "./components/UserRegister.jsx";
 import UserLogin from "./components/UserLogin.jsx";
 
 // Event2 Design2 - UserRegister, UserLogin, UserHome, UserInstruction
@@ -73,7 +73,7 @@ function App() {
         <Route path="/" element={<Intro />} />
         <Route path="/chooseEvent" element={<ChooseEvent />} />
         <Route path="/chooseDesign" element={<ChooseDesign />} />
-        <Route path="/userRegister" element={<UserRegister />} />
+        {/* <Route path="/userRegister" element={<UserRegister />} /> */}
         <Route path="/userLogin" element={<UserLogin />} />
 
         {/* // Event2 Design2 - UserRegister, UserLogin, UserHome, UserInstruction */}
