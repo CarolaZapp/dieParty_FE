@@ -114,9 +114,17 @@ hr {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 400;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
+.underDevelopment p {
+  color: var(--font-one);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0 2rem;
+  margin: 0;
+}
 .guestFeedback {
   color: var(--font-one);
   margin: 0;
@@ -256,7 +264,8 @@ hr {
     font-size: 1.5rem;
   }
 
-  .title {
+  .title,
+  .underDevelopment {
     font-size: 1rem;
   }
 }

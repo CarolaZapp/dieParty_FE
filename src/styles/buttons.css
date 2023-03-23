@@ -3,6 +3,7 @@
 .intro-one,
 .intro-two,
 .submit,
+.submitLarge,
 .goto,
 .rueckmeldung,
 .userHome {
@@ -41,6 +42,7 @@
 }
 
 .submit,
+.submitLarge,
 .rueckmeldung {
   font-size: 1rem;
   text-transform: uppercase;
@@ -54,7 +56,12 @@
   box-shadow: 4px 4px 4px var(--shadow-one);
 }
 
+.submitLarge {
+  width: 18rem;
+}
+
 .submit:hover,
+.submitLarge:hover,
 .rueckmeldung:hover {
   cursor: pointer;
   background-color: var(--bg-two);
@@ -125,6 +132,9 @@
   }
 } */
 
-/* not used here */
 /* for small phones - special */
-/* @media screen and (max-width: 529px) {} */
+@media screen and (max-width: 529px) {
+  .submitLarge {
+    width: 13rem;
+  }
+}
