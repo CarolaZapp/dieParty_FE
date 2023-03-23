@@ -147,7 +147,7 @@ const E2D2InvitationCreateSlide = ({ setInvitation }) => {
               />
             </div>
 
-            <button className="submit">Senden</button>
+            <button className="submitLarge">Personalisierung abschicken</button>
           </form>
         </div>
       </div>

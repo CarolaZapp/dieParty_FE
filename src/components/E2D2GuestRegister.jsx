@@ -79,6 +79,7 @@ const E2D2RegisterGuest = () => {
         <div className={styles.centerStripeD2}>
           <h1 className={styles.headline}>Geburtstag</h1>
           <hr />
+          <h2 className={styles.title}>Rückmeldung</h2>
           <form className={styles.form} onSubmit={handleSubmit}>
             <p className={styles.paragraph}>Kannst Du, könnt Ihr kommen?</p>
             <div className={styles.radio}>
@@ -249,7 +250,7 @@ const E2D2RegisterGuest = () => {
               onChange={handleChange}
               value={formData.comment}
             />
-            <button className="submit">Senden</button>
+            <button className="submitLarge">Rückmeldung abschicken</button>
           </form>
         </div>
       </div>
