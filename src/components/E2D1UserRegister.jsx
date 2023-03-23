@@ -169,6 +169,13 @@ const E2D1UserRegister = () => {
               </button>
             </h5>
           </div>
+          {/* Under development */}
+          <div className={styles.underDevelopment}>
+            <p>
+              Diese Designvorlage ist derzeit noch in der Entwicklung und daher
+              noch nicht in Funktion! <br></br> Vielen Dank für Ihr Verständnis.
+            </p>
+          </div>
         </div>
       </div>
     </>

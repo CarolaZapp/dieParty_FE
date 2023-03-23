@@ -52,6 +52,7 @@ const ChooseDesign = () => {
             <h1>Geburtstag</h1>
             <div className="imgD1" onClick={handleClickUserLoginD1}></div>
             <h2>Bunt</h2>
+            <p>(noch in Entwicklung)</p>
             <button className="intro-two" onClick={handleClickUserLoginD1}>
               Auswählen
             </button>
@@ -68,6 +69,7 @@ const ChooseDesign = () => {
             <h1>Geburtstag</h1>
             <div className="imgD3" onClick={handleClickUserLoginD3}></div>
             <h2>Goldig</h2>
+            <p>(noch in Entwicklung)</p>
             <button className="intro-two" onClick={handleClickUserLoginD3}>
               Auswählen
             </button>
