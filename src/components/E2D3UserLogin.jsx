@@ -82,7 +82,7 @@ const E2D3UserLogin = () => {
               value={formData.password}
               required
             />
-            <button className="submit">Senden</button>
+            <button className="submit">Anmelden</button>
           </form>
           <div className={styles.navTo}>
             <h5>

@@ -224,7 +224,7 @@ const E2D2ThanksCreateSlide = () => {
                 value={formData.comment}
               />
             </div>
-            <button className="submitLarge">Personalisierung abschicken</button>
+            <button className="submitLarge">Personalisierung speichern</button>
           </form>
         </div>
       </div>

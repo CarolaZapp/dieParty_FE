@@ -159,7 +159,7 @@ const E2D1UserRegister = () => {
               value={formData.password}
               required
             />
-            <button className="submit">Senden</button>
+            <button className="submit">Registrieren</button>
           </form>
           <div className={styles.navTo}>
             <h5>
