@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
 import styles from "../styles/forms.module.css";
+import "../styles/buttons.css";
 
 const E2D2UserInstruction = () => {
+  //useNavigate
+  const navigate = useNavigate();
+
   // useState
   const [invitation, setInvitation] = useState([]);
 
@@ -87,6 +92,16 @@ const E2D2UserInstruction = () => {
               personalisierte Danksagung zu sehen
             </li>
           </ol>
+        </div>
+        <div className="buttonContainer">
+          <button
+            className="submitLarge"
+            onClick={() => {
+              navigate("/userHome");
+            }}
+          >
+            Zurück zu mein Event
+          </button>
         </div>
       </div>
     </div>

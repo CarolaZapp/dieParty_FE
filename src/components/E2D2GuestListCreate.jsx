@@ -162,6 +162,14 @@ const E2D2GuestListCreate = () => {
               </select>
             </div>
             <button className="submitLarge">Einladung abschicken</button>
+            <button
+              className="submitLarge"
+              onClick={() => {
+                navigate("/userHome");
+              }}
+            >
+              Zurück zu mein Event
+            </button>
           </form>
         </div>
       </div>

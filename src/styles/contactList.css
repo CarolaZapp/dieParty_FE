@@ -45,6 +45,11 @@ tr:nth-child(odd) {
   text-transform: capitalize;
 }
 
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 /* not used here */
 /*  for laptops, tablets and phones (extra large) */
 /* @media screen and (max-width: 1365px) {} */

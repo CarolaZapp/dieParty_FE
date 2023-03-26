@@ -147,7 +147,15 @@ const E2D2InvitationCreateSlide = ({ setInvitation }) => {
               />
             </div>
 
-            <button className="submitLarge">Personalisierung speichern</button>
+            <button className="submitLarge">Einladung speichern</button>
+            <button
+              className="submitLarge"
+              onClick={() => {
+                navigate("/userHome");
+              }}
+            >
+              Zurück zu mein Event
+            </button>
           </form>
         </div>
       </div>

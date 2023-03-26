@@ -224,7 +224,15 @@ const E2D2ThanksCreateSlide = () => {
                 value={formData.comment}
               />
             </div>
-            <button className="submitLarge">Personalisierung speichern</button>
+            <button className="submitLarge">Danksagung speichern</button>
+            <button
+              className="submitLarge"
+              onClick={() => {
+                navigate("/userHome");
+              }}
+            >
+              Zurück zu mein Event
+            </button>
           </form>
         </div>
       </div>

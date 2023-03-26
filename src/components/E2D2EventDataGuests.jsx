@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
 import styles from "../styles/forms.module.css";
 import "../styles/contactList.css";
 
 const E2D2EventDataGuests = () => {
+  //useNavigate
+  const navigate = useNavigate();
+
   // useState
   const [userguests, setUserGuests] = useState([]);
 
@@ -67,6 +71,16 @@ const E2D2EventDataGuests = () => {
                 ))}
               </tbody>
             </table>
+          </div>
+          <div className="buttonContainer">
+            <button
+              className="submitLarge"
+              onClick={() => {
+                navigate("/userHome");
+              }}
+            >
+              Zurück zu mein Event
+            </button>
           </div>
         </div>
       </div>
