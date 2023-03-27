@@ -31,14 +31,12 @@ Guest lists & response management complete the package
 ## Used technologies
 
 - frontend:
-
   - html5
   - css3
   - javaScript.js
   - react.js
 
 - backend:
-
   - mongoDB
   - mongoose
   - express.js
@@ -48,7 +46,6 @@ Guest lists & response management complete the package
   - jsonwebtoken
   - cookieParser
   - @sendgrid/mail
-  - cors
   - morgan
 
 - upload storage:
@@ -87,11 +84,12 @@ Guest lists & response management complete the package
   - and, and, and ...
 
 ## Folder structure frontend:
-
+- api
 - assets
 - components
 - fonts
 - images
+- lib
 - styles
 
 ## To start frontend:
