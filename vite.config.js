@@ -13,7 +13,7 @@ export default defineConfig({
     // ???? wie Verbindung zum Frontend?
     // proxy: {
     //   "/": {
-    //     target: "http://217.160.69.175:4173",
+    //     target: "http://217.160.69.175:5173",
     //     changeOrigin: true,
     //   },
     // },
