@@ -1,0 +1,69 @@
+.pictureCredits {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.containerPictureCredits {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+}
+
+.item {
+  /* border: 2px solid var(--font-six);
+  border-radius: 0.4rem; */
+  width: 204px;
+  padding: 1rem;
+  margin: 1rem auto;
+} 
+
+.imgC1,
+.imgC2,
+.imgC3,
+.imgC4,
+.imgC5,
+.imgC6,
+.imgC7,
+.imgC8{
+  width: 204px;
+  height: 144px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+}
+
+
+
+.imgC1{
+  background-image: url("../images/bokeh-g215e54012_1920.jpg");
+}
+
+.imgC2{
+  background-image: url("../images/roses-gbb0c52006_1920.jpg");
+}
+
+.imgC3{
+  background-image: url("../images/happy-birthday-g1b705ed30_1920.jpg");
+}
+
+.imgC4{
+  background-image: url("../images/happy-birthday-g97903f2b0_1920.jpg");
+}
+
+.imgC5{
+  background-image: url("../images/rose-petals-g5cbd2a9f2_1920.jpg");
+}
+
+.imgC6{
+  background-image: url("../images/wedding-cake-g73972b9d8_1920.jpg");
+}
+
+.imgC7{
+  background-image: url("../images/happy-birthday-gf868657b0_1920.jpg");
+}
+
+.imgC8{
+  background-image: url("../images/flower-g8d2376bb1_1920.jpg");
+}
