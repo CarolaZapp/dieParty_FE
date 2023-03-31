@@ -56,6 +56,12 @@ import E2D1UserLogin from "./components/E2D1UserLogin.jsx";
 import E2D3UserRegister from "./components/E2D3UserRegister.jsx";
 import E2D3UserLogin from "./components/E2D3UserLogin.jsx";
 
+// // // Footer Items
+import Impressum from "./components/Impressum.jsx";
+import PictureCredits from "./components/PictureCredits.jsx"
+import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
+
+
 //  App
 function App() {
   const [invitation, setInvitation] = useState({
@@ -146,6 +152,11 @@ function App() {
         {/* // // // Event2 Design3 */}
         <Route path="/userLoginD3" element={<E2D3UserLogin />} />
         <Route path="/userRegisterD3" element={<E2D3UserRegister />} />
+
+        {/* // // // Footer items */}
+        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/pictureCredits" element={<PictureCredits />} />
+        <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
       </Routes>
     </div>
   );
