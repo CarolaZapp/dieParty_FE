@@ -146,8 +146,10 @@ const E2D2InvitationCreateSlide = ({ setInvitation }) => {
                 required
               />
             </div>
-
-            <button className="submitLarge">Einladung speichern</button>
+            <button 
+            className="submitLarge">
+              Einladung speichern
+            </button>
             <button
               className="submitLarge"
               onClick={() => {
