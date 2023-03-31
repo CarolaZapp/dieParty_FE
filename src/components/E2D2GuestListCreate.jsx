@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { host } from "../api/host.jsx";
+import E2D2Footer from "./E2D2Footer.jsx";
 import styles from "../styles/forms.module.css";
 import "../styles/buttons.css";
+
 
 const E2D2GuestListCreate = () => {
   //useNavigate
@@ -173,6 +175,7 @@ const E2D2GuestListCreate = () => {
           </form>
         </div>
       </div>
+      <E2D2Footer/>
     </>
   );
 };

@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
 import styles from "../styles/forms.module.css";
+import E2D2Footer from "./E2D2Footer.jsx";
 import "../styles/contactList.css";
 
 const E2D2EventDataGuests = () => {
@@ -84,6 +85,7 @@ const E2D2EventDataGuests = () => {
           </div>
         </div>
       </div>
+      <E2D2Footer/>
     </>
   );
 };

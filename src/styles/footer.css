@@ -1,7 +1,27 @@
-.footer {
+.footer,
+.footerE2D2{
+  /* background: linear-gradient(transparent, var(--bg-two)); */
   background-color: var(--bg-thirteen);
   color: var(--font-six);
   font-size: 0.8rem;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0 2rem;
 }
+
+.footerMain {
+  margin: 0 auto;
+  padding: 1rem 1rem 0;
+}
+
+.footerLegals {
+  margin: 0 auto;
+}
+
+.footerE2D2 {
+  /* background-color: var(--bg-one);
+  color: var(--font-one); */
+  background: linear-gradient(transparent, var(--bg-two));
+  background-color: var(--bg-one);
+  color: var(--font-four)
+}
+

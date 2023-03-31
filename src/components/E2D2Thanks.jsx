@@ -1,6 +1,7 @@
 // import { useNavigate } from "react-router-dom"; // not include at MVP
 import "../styles/thanks.css";
 import "../styles/buttons.css";
+import E2D2Footer from "./E2D2Footer.jsx";
 
 const E2D2Thanks = () => {
   // not included at MVP
@@ -55,6 +56,7 @@ const E2D2Thanks = () => {
           </div>
         </div>
       </div>
+      <E2D2Footer/>
     </>
   );
 };

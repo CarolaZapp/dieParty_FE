@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
+import E2D2Footer from "./E2D2Footer.jsx";
 import "../styles/invitation.css";
 import "../styles/invitationCreate.css";
 import "../styles/buttons.css";
@@ -34,6 +35,7 @@ const E2D2InvitationUser = () => {
   }, []);
 
   return (
+    <>
     <div className="containerInvitation">
       <div className="bgimg-one">
         <div className="caption-one">
@@ -80,6 +82,8 @@ const E2D2InvitationUser = () => {
         </button>
       </div>
     </div>
+    <E2D2Footer/>
+    </>
   );
 };
 

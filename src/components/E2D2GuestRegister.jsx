@@ -3,6 +3,7 @@ import { useState } from "react";
 import { host } from "../api/host.jsx";
 import styles from "../styles/forms.module.css";
 import "../styles/buttons.css";
+import E2D2Footer from "./E2D2Footer.jsx";
 
 const E2D2RegisterGuest = () => {
   // useNavigate
@@ -254,6 +255,7 @@ const E2D2RegisterGuest = () => {
           </form>
         </div>
       </div>
+      <E2D2Footer/>
     </>
   );
 };

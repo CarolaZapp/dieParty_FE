@@ -2,9 +2,11 @@ import "../styles/invitation.css";
 import "../styles/invitationCreate.css";
 import "../styles/buttons.css";
 import E2D2InvitationCreateSlide from "./E2D2InvitationCreateSlide.jsx";
+import E2D2Footer from "./E2D2Footer.jsx"
 
 const E2D2InvitationCreate = ({ invitation, setInvitation }) => {
   return (
+    <>
     <div className="containerInvitation">
       <div className="bgimg-one">
         <div className="caption-one">
@@ -73,6 +75,8 @@ const E2D2InvitationCreate = ({ invitation, setInvitation }) => {
         <E2D2InvitationCreateSlide setInvitation={setInvitation} />
       </div>
     </div>
+    <E2D2Footer/>
+    </>
   );
 };
 

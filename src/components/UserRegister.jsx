@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { host } from "../api/host.jsx";
+import Footer from "./Footer.jsx";
 import styles from "../styles/forms.module.css";
 import "../styles/buttons.css";
 
@@ -171,6 +172,7 @@ const UserRegister = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

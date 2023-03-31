@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import E2D2Footer from "./E2D2Footer.jsx";
 import "../styles/invitation.css";
 import "../styles/buttons.css";
 
@@ -12,6 +13,7 @@ const E2D2Invitation = () => {
   };
 
   return (
+    <>
     <div>
       <div className="bgimg-one">
         <div className="caption-one">
@@ -61,6 +63,8 @@ const E2D2Invitation = () => {
         </button>
       </div>
     </div>
+    <E2D2Footer/>
+    </>
   );
 };
 

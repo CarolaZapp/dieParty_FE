@@ -6,12 +6,16 @@
 .submitLarge,
 .goto,
 .rueckmeldung,
-.userHome {
+.userHome,
+.footerButton,
+.footerButtonE2D2,
+.back{
   font-family: Montserrat;
 }
 
 .intro-one,
-.intro-two {
+.intro-two,
+.back {
   font-size: 1rem;
   text-transform: uppercase;
   margin: 1rem auto;
@@ -29,12 +33,14 @@
   margin-bottom: 2rem;
 }
 
-.intro-two {
+.intro-two,
+.back {
   width: 13rem;
 }
 
 .intro-one:hover,
-.intro-two:hover {
+.intro-two:hover,
+.back:hover {
   cursor: pointer;
   color: var(--font-four);
   background-color: var(--bg-six);
@@ -102,6 +108,20 @@
   box-shadow: 4px 4px 4px var(--shadow-two);
 }
 
+.footerButton,
+.footerButtonE2D2 {
+  font-size: 0.8rem;
+  color: var(--font-six);
+  background: none;
+  border: none;
+  padding: 0 1rem 1rem;
+}
+
+.footerButtonE2D2 {
+  color: var(--font-four);
+ 
+}
+
 /* not used here */
 /*  for laptops, tablets and phones (extra large) */
 /* @media screen and (max-width: 1365px) {} */
@@ -136,5 +156,6 @@
 @media screen and (max-width: 529px) {
   .submitLarge {
     width: 13rem;
+    font-size: 0.7rem;
   }
 }

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
 import styles from "../styles/forms.module.css";
 import "../styles/buttons.css";
+import E2D2Footer from "./E2D2Footer.jsx";
 
 const E2D2UserInstruction = () => {
   //useNavigate
@@ -25,6 +26,7 @@ const E2D2UserInstruction = () => {
   }, []);
 
   return (
+    <>
     <div className={styles.backgroundD2}>
       <div className={styles.centerStripeD2}>
         <h1 className={styles.headline}>Anleitung</h1>
@@ -105,6 +107,8 @@ const E2D2UserInstruction = () => {
         </div>
       </div>
     </div>
+    <E2D2Footer/>
+    </>
   );
 };
 

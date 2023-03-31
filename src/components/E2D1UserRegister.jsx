@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { host } from "../api/host.jsx";
+import Footer from "./Footer.jsx";
 import styles from "../styles/forms.module.css";
 import "../styles/buttons.css";
 
@@ -173,11 +174,12 @@ const E2D1UserRegister = () => {
           <div className={styles.underDevelopment}>
             <p>
               Diese Designvorlage ist derzeit noch in der Entwicklung und daher
-              noch nicht in Funktion! <br></br> Vielen Dank für Ihr Verständnis.
+              noch nicht in Funktion! <br></br> Vielen Dank für Ihr Verständnis. 
             </p>
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

@@ -2,36 +2,35 @@ import { useNavigate } from "react-router-dom";
 import "../styles/footer.css";
 import "../styles/buttons.css"
 
-const Footer = () => {
+const E2D2Footer = () => {
 // useNavigate
   const navigate = useNavigate();
   return (
     <>
-      <div className="footer">
+      <div className="footerE2D2">
         <div className="footerMain">
-          <p> <strong>dieP@rty </strong>
-              entwickelt mit ❤️ von Carola Zapp, © 2023 Finales Projekt DCI Weiterbildung</p>
+        <p> <strong>dieP@rty </strong>
+            entwickelt mit ❤️ von Carola Zapp, © 2023 Finales Projekt DCI Weiterbildung</p>
         </div>
         <div className="footerLegals">
         <button
-          className="footerButton"
+          className="footerButtonE2D2"
           onClick={() => {
-            navigate("/impressum");
+          navigate("/impressum");
           }}
-        >
+          >
           Impressum
         </button>
         <button
-          className="footerButton"
+          className="footerButtonE2D2"
           onClick={() => {
             navigate("/pictureCredits");
           }}
           >
             Bildnachweise
         </button>
-  
         <button
-          className="footerButton"
+          className="footerButtonE2D2"
           onClick={() => {
             navigate("/privacyPolicy");
           }}
@@ -44,4 +43,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default E2D2Footer;

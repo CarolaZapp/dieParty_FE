@@ -2,6 +2,7 @@ import "../styles/thanks.css";
 import "../styles/thanksCreate.css";
 import "../styles/buttons.css";
 import E2D2ThanksCreateSlide from "./E2D2ThanksCreateSlide.jsx";
+import E2D2Footer from "./E2D2Footer.jsx";
 
 const E2D2ThanksCreate = () => {
   return (
@@ -45,6 +46,7 @@ const E2D2ThanksCreate = () => {
           <E2D2ThanksCreateSlide />
         </div>
       </div>
+      <E2D2Footer/>
     </>
   );
 };
