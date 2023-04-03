@@ -10,6 +10,9 @@ const E2D2UserHome = () => {
   // useNavigate
   const navigate = useNavigate();
 
+  // useParams
+  const { eventId} = useParams();
+
   // useState
   const [events, setEvents] = useState([]);
   const [invitation, setInvitation] = useState([]);
@@ -29,7 +32,7 @@ const E2D2UserHome = () => {
 
   // useEffect - invitation
   useEffect(() => {
-    fetch(`${host}/invitation`, {
+    fetch(`${host}/invitation/${eventId}`, {
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
