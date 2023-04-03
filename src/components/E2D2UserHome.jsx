@@ -1,4 +1,5 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
+// import { useNavigate, useParams} from "react-router-dom"; // Idee 03.04. funktioniert nicht
 import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
 import E2D2Footer from "./E2D2Footer.jsx";
@@ -11,7 +12,7 @@ const E2D2UserHome = () => {
   const navigate = useNavigate();
 
   // useParams
-  const { eventId} = useParams();
+  // const {eventId} = useParams(); // Idee 03.04. funktioniert nicht
 
   // useState
   const [events, setEvents] = useState([]);
@@ -32,7 +33,7 @@ const E2D2UserHome = () => {
 
   // useEffect - invitation
   useEffect(() => {
-    fetch(`${host}/invitation/${eventId}`, {
+    fetch(`${host}/invitation`, {
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
