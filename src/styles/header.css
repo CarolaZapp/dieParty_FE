@@ -2,8 +2,9 @@
 
 .header {
   overflow: hidden;
-  background-color: var(--bg-thirteen);
+  background-color: var(--bg-ten);
   padding: 1rem 0.5rem;
+  
 }
 
 .header button {

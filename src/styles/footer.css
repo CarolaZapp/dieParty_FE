@@ -1,7 +1,8 @@
 .footer,
 .footerE2D2{
   /* background: linear-gradient(transparent, var(--bg-two)); */
-  background-color: var(--bg-thirteen);
+  /* background-color: var(--bg-thirteen); */
+  background-color: var(--bg-ten);
   color: var(--font-six);
   font-size: 0.8rem;
   text-align: center;

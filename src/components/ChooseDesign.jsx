@@ -39,8 +39,10 @@ const ChooseDesign = () => {
 
   return (
     <>
-      <HeaderIntro />
+     
       <div className="containerDesign">
+        <div className="fadeBackground">
+        <HeaderIntro />
         <div className="topDesign">
           <p>
             Beginnen Sie Ihre Veranstaltungs Vorbereitungen mit der Auswahl
@@ -76,6 +78,7 @@ const ChooseDesign = () => {
           </div>
         </div>
         <Footer />
+        </div>
       </div>
     </>
   );

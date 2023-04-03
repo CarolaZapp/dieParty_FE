@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footerMain">
           <p> <strong>dieP@rty </strong>
-              entwickelt mit ❤️ von Carola Zapp, © 2023 Finales Projekt DCI Weiterbildung</p>
+          Finales Projekt DCI Weiterbildung, entwickelt von Carola Zapp, © 2023 </p>
         </div>
         <div className="footerLegals">
         <button

@@ -10,9 +10,10 @@ const Intro = () => {
 
   return (
     <>
-      <HeaderIntro />
+     
       <div className="containerIntro">
         <div className="fadeBackground">
+        <HeaderIntro />
           <div className="center">
             <div className="section-one">
               <h1>dieP@rty</h1>
@@ -43,9 +44,10 @@ const Intro = () => {
               Eine Einladung erstellen
             </button>
           </div>
+          <Footer />
         </div>
       </div>
-      <Footer />
+     
     </>
   );
 };
