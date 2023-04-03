@@ -10,19 +10,15 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: {
-    // ???? wie Verbindung zum Frontend?
-    // proxy: {
-    //   "/": {
-    //     target: "http://217.160.69.175:5173",
-    //     changeOrigin: true,
-    //   },
-    // },
     proxy: {
       "/api": {
-        target: "http://217.160.69.175:4005",
+        // target: "http://localhost:4005",
+        target:"http://217.160.69.175:4005",
         changeOrigin: true,
         // rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },
 });
+
+
