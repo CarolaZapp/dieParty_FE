@@ -28,7 +28,8 @@
 }
 
 .backgroundFade {
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--bg-two-a);
+  min-height: 100vh;
 }
 
 .centerStripe,

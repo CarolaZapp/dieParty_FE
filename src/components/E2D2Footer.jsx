@@ -10,7 +10,7 @@ const E2D2Footer = () => {
       <div className="footerE2D2">
         <div className="footerMain">
         <p> <strong>dieP@rty </strong>
-            entwickelt mit ❤️ von Carola Zapp, © 2023 Finales Projekt DCI Weiterbildung</p>
+        Finales Projekt DCI Weiterbildung, entwickelt von Carola Zapp, © 2023 </p>
         </div>
         <div className="footerLegals">
         <button
