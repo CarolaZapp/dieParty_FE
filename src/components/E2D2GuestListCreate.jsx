@@ -174,8 +174,8 @@ const E2D2GuestListCreate = () => {
             </button>
           </form>
         </div>
+        <E2D2Footer/>
       </div>
-      <E2D2Footer/>
     </>
   );
 };

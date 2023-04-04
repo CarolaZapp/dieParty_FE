@@ -230,8 +230,8 @@ const E2D2UserHome = () => {
             </div>
           </div>
         </div>
+        <E2D2Footer/>
       </div>
-      <E2D2Footer/>
     </>
   );
 };

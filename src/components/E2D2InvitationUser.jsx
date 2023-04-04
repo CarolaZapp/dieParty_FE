@@ -80,9 +80,11 @@ const E2D2InvitationUser = () => {
         <button className="rueckmeldung" onClick={handleClickGuestRegister}>
           Zur Rückmeldung
         </button>
+        <div className="belowBottom">
+        <E2D2Footer/>
+        </div>
       </div>
     </div>
-    <E2D2Footer/>
     </>
   );
 };

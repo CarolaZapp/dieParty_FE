@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import E2D2Footer from "./E2D2Footer.jsx";
-// import Footer from "./Footer.jsx";
 import "../styles/invitation.css";
 import "../styles/buttons.css";
 
@@ -62,10 +61,11 @@ const E2D2Invitation = () => {
         <button className="rueckmeldung" onClick={handleClickLogin}>
           Personalisieren
         </button>
-        {/* <Footer/> */}
+        <div className="belowBottom">
+        <E2D2Footer/>
+        </div>
       </div>
     </div>
-    <E2D2Footer/>
     </>
   );
 };

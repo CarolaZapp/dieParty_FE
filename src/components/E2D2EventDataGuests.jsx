@@ -84,8 +84,8 @@ const E2D2EventDataGuests = () => {
             </button>
           </div>
         </div>
+        <E2D2Footer/>
       </div>
-      <E2D2Footer/>
     </>
   );
 };

@@ -41,12 +41,12 @@ const E2D2ThanksCreate = () => {
           <div className="bottom-text">
             <h3>26.08.2023</h3>
           </div>
+          <E2D2Footer/>
         </div>
         <div className="overlay">
           <E2D2ThanksCreateSlide />
         </div>
       </div>
-      <E2D2Footer/>
     </>
   );
 };

@@ -254,8 +254,8 @@ const E2D2RegisterGuest = () => {
             <button className="submitLarge">Rückmeldung abschicken</button>
           </form>
         </div>
+        <E2D2Footer/>
       </div>
-      <E2D2Footer/>
     </>
   );
 };
