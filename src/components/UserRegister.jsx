@@ -170,9 +170,9 @@ const UserRegister = () => {
               </h5>
             </div>
           </div>
+          <Footer />
         </div>
       </div>
-      <Footer />
     </>
   );
 };

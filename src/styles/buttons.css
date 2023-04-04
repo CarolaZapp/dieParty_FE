@@ -109,19 +109,26 @@
 }
 
 .footerButton,
-.footerButtonE2D2 {
+.footerButtonUser,
+.footerButtonE2D2,
+.footerButtonE2D1,
+.footerButtonE2D3 {
   font-size: 0.8rem;
-  color: var(--font-six);
+  color: var(--font-four);
   background: none;
   border: none;
   padding: 0 1rem 1rem;
 }
 
-.footerButtonE2D2 {
-  color: var(--font-four);
- 
+
+.footerButton {
+  color: var(--font-six);
 }
 
+
+.footerButtonE2D3 {
+  color: var(--font-one);
+}
 /* not used here */
 /*  for laptops, tablets and phones (extra large) */
 /* @media screen and (max-width: 1365px) {} */

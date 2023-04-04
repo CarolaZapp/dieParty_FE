@@ -1,5 +1,8 @@
 .footer,
-.footerE2D2{
+.footerUser,
+.footerE2D2,
+.footerE2D1,
+.footerE2D3{
   /* background: linear-gradient(transparent, var(--bg-two)); */
   /* background-color: var(--bg-thirteen); */
   background-color: var(--bg-ten);
@@ -18,12 +21,18 @@
   margin: 0 auto;
 }
 
-.footerE2D2 {
-  /* background-color: var(--bg-one);
-  color: var(--font-one); */
-  /* background: linear-gradient(transparent, var(--bg-two));
-  background-color: var(--bg-one); */
+.footerE2D2,
+.footerE2D1 {
   background: var(--bg-two-a);
   color: var(--font-four)
 }
 
+.footerE2D3 {
+  background: var(--bg-nine-a);
+  color: var(--font-one)
+}
+
+.footerUser {
+  background: var(--bg-thirteen-a);
+  color: var(--font-four)
+}

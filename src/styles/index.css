@@ -1,6 +1,7 @@
 :root {
   /* background colors */
   --bg-one: rgb(199, 136, 184);
+  --bg-one-a: rgba(199, 136, 184, 0.7);
   --bg-two: white;
   --bg-two-a: rgba(255, 255, 255, 0.7);
   --bg-three: rgb(56, 76, 110);
@@ -10,10 +11,13 @@
   --bg-seven: rgb(37, 37, 37);
   --bg-eight: rgb(107, 107, 107);
   --bg-nine: rgb(98, 85, 79);
+  --bg-nine-a: rgba(98, 85, 79, 0.7);
   --bg-ten: transparent;
   --bg-eleven: rgb(146, 203, 56);
+  --bg-eleven-a: rgba(146, 203, 56, 0.7);
   --bg-twelve: rgb(117, 93, 78);
   --bg-thirteen: rgb(220, 202, 179);
+  --bg-thirteen-a: rgba(220, 202, 179, 0.7);
 
   /* font colors */
   --font-one: white;

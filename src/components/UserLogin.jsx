@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { host } from "../api/host.jsx";
-// import Footer from "./Footer.jsx";
+import FooterUser from "./FooterUser.jsx";
 import styles from "../styles/forms.module.css";
 import "../styles/buttons.css";
 
@@ -101,7 +101,7 @@ const UserLogin = () => {
               </h5>
             </div>
           </div>
-          {/* <Footer /> */}
+          <FooterUser />
         </div>
       </div>
     </>

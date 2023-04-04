@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { host } from "../api/host.jsx";
-import Footer from "./Footer.jsx";
+import E2D1Footer from "./E2D1Footer.jsx";
 import styles from "../styles/forms.module.css";
 import "../styles/buttons.css";
 
@@ -178,8 +178,8 @@ const E2D1UserRegister = () => {
             </p>
           </div>
         </div>
+        <E2D1Footer />
       </div>
-      <Footer />
     </>
   );
 };
