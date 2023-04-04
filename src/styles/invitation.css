@@ -78,6 +78,14 @@ h1 {
   letter-spacing: 0.5rem;
 }
 
+.belowBottom {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  color: var(--font-one);
+}
+
 .demoH3 {
   letter-spacing: 0.5rem;
   text-transform: uppercase;
@@ -135,7 +143,7 @@ h1 {
   }
   .bottom {
     font-size: 3rem;
-    bottom: 2%;
+    bottom: 10%;
   }
 }
 
@@ -156,7 +164,7 @@ h1 {
 
   .bottom {
     font-size: 3rem;
-    bottom: 7%;
+    bottom: 15%;
   }
 }
 
@@ -176,7 +184,7 @@ h1 {
 
   .bottom {
     font-size: 3rem;
-    bottom: 10%;
+    bottom: 17.5%;
   }
 }
 
@@ -195,5 +203,6 @@ h1 {
 
   .bottom {
     font-size: 2.5rem;
+    bottom: 20%;
   }
 }

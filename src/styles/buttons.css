@@ -83,7 +83,7 @@
 
 .rueckmeldung {
   position: absolute;
-  bottom: 5%;
+  bottom: 12.5%;
   right: 7.5%;
   background-color: var(--bg-one);
 }
@@ -141,21 +141,25 @@
     text-align: center;
     margin: auto;
   }
+  .rueckmeldung {
+    bottom: 20%;
+  }
 }
 
 /*  for smaller tablets and phones  - special*/
-/* stay for update.... */
-/* @media screen and (max-width: 859px) {
-  .userHome {
-    text-align: center;
-    margin: auto;
+@media screen and (max-width: 859px) {
+  .rueckmeldung {
+    bottom: 15%;
   }
-} */
+}
 
 /* for small phones - special */
 @media screen and (max-width: 529px) {
   .submitLarge {
     width: 13rem;
     font-size: 0.7rem;
+  }
+  .rueckmeldung {
+    bottom: 17.5%;
   }
 }
