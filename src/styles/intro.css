@@ -18,7 +18,8 @@
 
 .center {
   display: flex;
-  min-height: min-content;
+  /* min-height: min-content; */
+  min-height: 80vh;
 }
 
 .section-one {

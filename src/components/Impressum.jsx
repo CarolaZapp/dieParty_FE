@@ -31,9 +31,9 @@ const Impressum = () => {
             Startseite
             </button>
             </div>
+            <Footer />
           </div>
         </div>
-      <Footer />
     </>
   );
 };

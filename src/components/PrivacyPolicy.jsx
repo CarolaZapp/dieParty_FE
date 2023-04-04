@@ -56,9 +56,9 @@ E-Mail: dieParty@carolaz.app</p>
             Startseite
             </button>
             </div>
+            <Footer />
           </div>
         </div>
-      <Footer />
     </>
   );
 };

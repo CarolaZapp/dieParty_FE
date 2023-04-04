@@ -78,9 +78,9 @@ const navigate = useNavigate();
                 </button>
               </div>
             </div>
+            <Footer />
           </div>
         </div>
-      <Footer />
       </>
   );
 };

@@ -1,6 +1,7 @@
 .pictureCredits {
   padding-top: 5rem;
   padding-bottom: 2rem;
+  min-height: 80vh;
 }
 
 .containerPictureCredits {

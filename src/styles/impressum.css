@@ -4,6 +4,7 @@
   padding-bottom: 2rem;
   min-width: 320px;
   max-width: 1023px;
+  min-height: 80vh;
   margin: auto;
 }
 
