@@ -118,8 +118,8 @@ const E2D2UserLogin = () => {
             </h5>
           </div>
         </div>
+        <E2D2Footer/>
       </div>
-      <E2D2Footer/>
     </>
   );
 };

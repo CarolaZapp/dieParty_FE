@@ -171,8 +171,8 @@ const E2D2UserRegister = () => {
             </h5>
           </div>
         </div>
+        <E2D2Footer/>
       </div>
-      <E2D2Footer/>
     </>
   );
 };
