@@ -33,6 +33,7 @@ const E2D2UserRegister = () => {
     } 
   }, []);
   
+
   useEffect(() => {
     if(event){
       fetch(`${host}/event`, {
@@ -47,13 +48,13 @@ const E2D2UserRegister = () => {
         console.log(json);
         setFormData((prev) => ({
           ...prev,
-          eventId: json._id
+          events: json._id
         }));
       }) 
     }
   }, [event]);
 
-
+  
   // handleClick
   const handleClickLogin = () => {
     navigate("/userLoginD2");

@@ -49,6 +49,10 @@ const E2D2UserLogin = () => {
       })
       .then((json) => {
         console.log(json);
+        navigate("/userHome");
+
+    
+
 
         // if (!json.user.events) {
         //   fetch(`${host}/event`, {
@@ -75,6 +79,9 @@ const E2D2UserLogin = () => {
       })
       .catch(console.log);
   };
+
+
+
 
   return (
     <>
