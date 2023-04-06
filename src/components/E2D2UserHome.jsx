@@ -32,7 +32,7 @@ const E2D2UserHome = () => {
 
   // useEffect - invitation
   useEffect(() => {
-    fetch(`${host}/invitation`, {
+    fetch(`${host}/invitation/${eventId}`, {
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
