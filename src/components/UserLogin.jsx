@@ -44,17 +44,40 @@ const UserLogin = () => {
         "Content-type": "application/json; charset=UTF-8",
       },
     })
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Eingabe falsch");
+        }
+      })
       .then((json) => {
-        if (json.error) {
-          console.log("Eingabe falsch", json.error);
-        }
-        if (json.message) {
-          setFormData(Initial);
-          navigate("/userHome");
-        }
-      });
+        console.log(json);
+        navigate("/userHome");
+      })
+      .catch(console.log);
   };
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   fetch(`${host}/user/login`, {
+  //     method: "POST",
+  //     body: JSON.stringify(formData),
+  //     headers: {
+  //       "Content-type": "application/json; charset=UTF-8",
+  //     },
+  //   })
+  //     .then((response) => response.json())
+  //     .then((json) => {
+  //       if (json.error) {
+  //         console.log("Eingabe falsch", json.error);
+  //       }
+  //       if (json.message) {
+  //         setFormData(Initial);
+  //         navigate("/userHome");
+  //       }
+  //     });
+  // };
 
   return (
     <>

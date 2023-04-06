@@ -31,6 +31,8 @@ const E2D2UserRegister = () => {
     if (sessionStorage){
       setEvent(JSON.parse(sessionStorage.getItem("event")));
     } 
+    sessionStorage.clear();
+    console.log("Sitzungsspeicher gelöscht: ", sessionStorage);
   }, []);
   
 
