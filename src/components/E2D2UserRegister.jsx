@@ -23,7 +23,35 @@ const E2D2UserRegister = () => {
     password: "",
   };
 
+  const [event, setEvent] = useState("");
   const [formData, setFormData] = useState(Initial);
+
+
+  useEffect(() => {
+    if (sessionStorage){
+      setEvent(JSON.parse(sessionStorage.getItem("event")));
+    } 
+  }, []);
+  
+  useEffect(() => {
+    if(event){
+      fetch(`${host}/event`, {
+        method: "POST",
+        body: JSON.stringify(event),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      } ) // richtige Pfad für fetch eintragen
+      .then((res) => res.json())
+      .then((json) => {
+        setFormData((prev) => ({
+          ...prev,
+          eventId: json._id
+        }));
+      }) 
+    }
+  }, [event]);
+
 
   // handleClick
   const handleClickLogin = () => {

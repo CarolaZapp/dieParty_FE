@@ -39,7 +39,6 @@ const ChooseDesign = () => {
 
   return (
     <>
-     
       <div className="containerDesign">
         <div className="fadeBackground">
         <HeaderIntro />
