@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { host } from "../api/host.jsx";
 import E2D2Footer from "./E2D2Footer.jsx";
 import styles from "../styles/forms.module.css";
@@ -41,9 +41,10 @@ const E2D2UserRegister = () => {
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
-      } ) // richtige Pfad für fetch eintragen
+      } ) 
       .then((res) => res.json())
       .then((json) => {
+        console.log(json);
         setFormData((prev) => ({
           ...prev,
           eventId: json._id
