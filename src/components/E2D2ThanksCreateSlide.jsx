@@ -58,7 +58,6 @@ const E2D2ThanksCreateSlide = () => {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       },
-      credentials: "include",
     })
       .then((response) => response.json())
       .then((json) => {

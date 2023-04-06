@@ -40,7 +40,6 @@ const E2D1UserLogin = () => {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       },
-      credentials: "include",
     })
       .then((response) => response.json())
       .then((json) => {

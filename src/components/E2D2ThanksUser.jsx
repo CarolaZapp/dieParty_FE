@@ -21,7 +21,6 @@ const E2D2ThanksUser = () => {
   useEffect(() => {
     fetch(`${host}/thanks`, {
       method: "GET",
-      credentials: "include",
     })
       .then((response) => response.json())
       .then((json) => setThanks(json));

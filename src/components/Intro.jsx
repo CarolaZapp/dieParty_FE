@@ -10,7 +10,6 @@ const Intro = () => {
 
   return (
     <>
-     
       <div className="containerIntro">
         <div className="fadeBackground">
         <HeaderIntro />
@@ -47,7 +46,6 @@ const Intro = () => {
           <Footer />
         </div>
       </div>
-     
     </>
   );
 };

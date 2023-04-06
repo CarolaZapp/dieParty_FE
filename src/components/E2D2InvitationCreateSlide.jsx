@@ -37,7 +37,6 @@ const E2D2InvitationCreateSlide = ({ setInvitation }) => {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       },
-      credentials: "include",
     })
       .then((response) => response.json())
       .then((json) => {

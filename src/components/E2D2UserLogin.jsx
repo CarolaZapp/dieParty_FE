@@ -39,7 +39,6 @@ const E2D2UserLogin = () => {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       },
-      credentials: "include",
     })
       .then((response) => {
         if (response.ok) {
@@ -61,7 +60,6 @@ const E2D2UserLogin = () => {
             headers: {
               "Content-type": "application/json; charset=UTF-8",
             },
-            credentials: "include",
           }).then((response) => {
             if (response.ok) {
               setFormData(Initial);
