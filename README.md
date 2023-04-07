@@ -87,13 +87,14 @@ Guest lists & response management complete the package
   - and, and, and ...
 
 ## Folder structure frontend:
-- api
-- assets
-- components
-- fonts
-- images
-- lib
-- styles
+- src
+  - api
+  - assets
+  - components
+  - fonts
+  - images
+  - lib
+  - styles
 
 ## To start frontend:
 
