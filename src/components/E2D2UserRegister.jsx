@@ -45,7 +45,7 @@ const E2D2UserRegister = () => {
           "Content-type": "application/json; charset=UTF-8",
         },
       } ) 
-      .then((res) => res.json())
+      .then((response) => response.json())
       .then((json) => {
         console.log(json);
         setFormData((prev) => ({
