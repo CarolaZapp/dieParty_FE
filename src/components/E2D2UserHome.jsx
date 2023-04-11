@@ -158,7 +158,7 @@ console.log("invitation home -json:",json);
               <button
                 className="userHome"
                 onClick={() => {
-                  navigate("/eventCountdownPage");
+                  navigate("/eventCountdownPage/:eventId");
                 }}
               >
                 Bestätigung an Gäste

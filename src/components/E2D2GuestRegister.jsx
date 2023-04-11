@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams} from "react-router-dom";
 import { useState } from "react";
 import { host } from "../api/host.jsx";
 import styles from "../styles/forms.module.css";
@@ -69,7 +69,7 @@ const E2D2RegisterGuest = () => {
         }
         if (json.approved) {
           setFormData(Initial);
-          navigate("/eventCountdownPage");
+          navigate(`/eventCountdownPage/:eventId`);
         }
       });
   };

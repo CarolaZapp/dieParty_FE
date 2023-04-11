@@ -128,7 +128,7 @@ function App() {
           element={<E2D2GuestRegister />}
         />
         <Route
-          path="/eventCountdownPage"
+          path="/eventCountdownPage/:eventId"
           element={<E2D2EventCountdownPage />}
         />
 
