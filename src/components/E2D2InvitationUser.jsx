@@ -23,7 +23,7 @@ const E2D2InvitationUser = () => {
 
   // useEffect
   useEffect(() => {
-    fetch(`${host}/invitation/:eventId`, {
+    fetch(`${host}/invitation/${eventId}`, {
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -31,7 +31,7 @@ const E2D2InvitationUser = () => {
     })
       .then((response) => response.json())
       .then((json) => {
-console.log("get invitation with eventId -json:",json);
+console.log("get invitation with ${eventId} -json:",json);
         setInvitation(json)}
     );
   }, []);
