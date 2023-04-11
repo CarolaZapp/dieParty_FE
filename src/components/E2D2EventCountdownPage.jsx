@@ -16,7 +16,9 @@ const E2D2EventCountdownPage = () => {
       },
     })
       .then((response) => response.json())
-      .then((json) => setInvitation(json));
+      .then((json) => {
+console.log("get invitation countdown -json:",json);
+        setInvitation(json)});
   }, []);
 
   return (

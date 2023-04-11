@@ -23,7 +23,9 @@ const E2D2UserHome = () => {
       },
     })
       .then((response) => response.json())
-      .then((json) => setEvents(json));
+      .then((json) => {
+console.log("event home -json:", json);
+        setEvents(json)});
   }, []);
 
   // useEffect - invitation
@@ -35,7 +37,10 @@ const E2D2UserHome = () => {
       },
     })
       .then((response) => response.json())
-      .then((json) => setInvitation(json));
+      .then((json) => {
+console.log("invitation home -json:",json);
+        setInvitation(json)}
+    );
   }, []);
 
   return (

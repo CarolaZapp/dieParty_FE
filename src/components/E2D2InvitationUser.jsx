@@ -30,7 +30,10 @@ const E2D2InvitationUser = () => {
       },
     })
       .then((response) => response.json())
-      .then((json) => setInvitation(json));
+      .then((json) => {
+console.log("get invitation with eventId -json:",json);
+        setInvitation(json)}
+    );
   }, []);
 
   return (
