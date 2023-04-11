@@ -1,5 +1,4 @@
-// import { useNavigate} from "react-router-dom";
-import { useNavigate, useParams} from "react-router-dom"; // Idee 03.04. funktioniert nicht
+import { useNavigate} from "react-router-dom";
 import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
 import E2D2Footer from "./E2D2Footer.jsx";
@@ -10,9 +9,6 @@ import "../styles/buttons.css";
 const E2D2UserHome = () => {
   // useNavigate
   const navigate = useNavigate();
-
-  // useParams
-  const {eventId} = useParams(); // Idee 03.04. funktioniert nicht
 
   // useState
   const [events, setEvents] = useState([]);
