@@ -12,6 +12,8 @@ const E2D2InvitationUser = () => {
 
   // useParams
   const { eventId, userGuestId } = useParams();
+console.log("Param eventId:", eventId);
+console.log("Param userGuestId:", userGuestId);
 
   // handleClick
   const handleClickGuestRegister = () => {
@@ -23,7 +25,7 @@ const E2D2InvitationUser = () => {
 
   // useEffect
   useEffect(() => {
-    fetch(`${host}/invitation/${eventId}`, {
+    fetch(`${host}/invitation`, {
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
