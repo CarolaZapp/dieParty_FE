@@ -25,9 +25,6 @@ const E2D2RegisterGuest = () => {
 
   const [formData, setFormData] = useState(Initial);
 
-  // useParams -nur für mail Version wichtig!
-  // const { eventId, userGuestId } = useParams();
-
   // handleChange
   const handleChange = (event) => {
     if (event.target.name === "join" || event.target.name === "lodging") {
@@ -51,28 +48,6 @@ const E2D2RegisterGuest = () => {
     }
   };
 
-  // handleSubmit - nur für mail Version wichtig!
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   const body = { formData, eventId, userGuestId };
-  //   fetch(`${host}/userGuest`, {
-  //     method: "PATCH",
-  //     body: JSON.stringify(body),
-  //     headers: {
-  //       "Content-type": "application/json; charset=UTF-8",
-  //     },
-  //   })
-  //     .then((response) => response.json())
-  //     .then((json) => {
-  //       if (json.error) {
-  //         console.log("Eingabe falsch", json.eror);
-  //       }
-  //       if (json.approved) {
-  //         setFormData(Initial);
-  //         navigate(`/eventCountdownPage`);
-  //       }
-  //     });
-  // };
   return (
     <>
       <div className={styles.backgroundD2}>
@@ -80,7 +55,6 @@ const E2D2RegisterGuest = () => {
           <h1 className={styles.headline}>Geburtstag</h1>
           <hr />
           <h2 className={styles.title}>Rückmeldung</h2>
-          {/* <form className={styles.form} onSubmit={handleSubmit}> */}
           <form className={styles.form} >
             <p className={styles.paragraph}>Kannst Du, könnt Ihr kommen?</p>
             <div className={styles.radio}>
@@ -251,7 +225,6 @@ const E2D2RegisterGuest = () => {
               onChange={handleChange}
               value={formData.comment}
             />
-            {/* <button className="submitLarge">Rückmeldung abschicken</button> */}
             <button
               className="submitLarge"
               onClick={() => {
