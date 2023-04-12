@@ -84,6 +84,14 @@ console.log("get invitation ohne / -json:",json);
         {/* <button className="rueckmeldung" onClick={handleClickGuestRegister}>
           Zur Rückmeldung
         </button> */}
+            <button
+              className="rueckmeldung"
+              onClick={() => {
+                navigate("/userHome");
+              }}
+            >
+              Zurück zu mein Event
+            </button>
         <div className="belowBottom">
         <E2D2Footer/>
         </div>

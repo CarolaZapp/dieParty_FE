@@ -82,6 +82,7 @@
 }
 
 .rueckmeldung {
+  width: 18rem;
   position: absolute;
   bottom: 12.5%;
   right: 7.5%;

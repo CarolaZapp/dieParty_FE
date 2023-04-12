@@ -1,14 +1,14 @@
-// import { useNavigate } from "react-router-dom"; // not include at MVP
+import { useNavigate } from "react-router-dom"; 
 import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
 import "../styles/thanksCreate.css";
 import "../styles/buttons.css";
 
 const E2D2ThanksUser = () => {
-  // not included at MVP
   // useNavigate
-  // const navigate = useNavigate();
-  //
+  const navigate = useNavigate();
+  
+  // not included at MVP
   // handleClick
   // const handleClickGalerie = () => {
   //   navigate("/galerie");
@@ -65,13 +65,22 @@ const E2D2ThanksUser = () => {
           </div>
           <div className="bottom-text">
             <h3>{thanks.comment}</h3>
-            <hr />
             {/* 
             // not included at MVP
             <button className="intro-one" onClick={handleClickGalerie}>
               Zur Bildergalerie
             </button> */}
           </div>
+          <div className="buttonContainer">
+          <button
+              className="intro-one"
+              onClick={() => {
+                navigate("/userHome");
+              }}
+            >
+              Zurück zu mein Event
+            </button>
+        </div>
         </div>
       </div>
     </>

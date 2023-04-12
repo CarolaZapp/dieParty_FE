@@ -251,6 +251,14 @@ const E2D2RegisterGuest = () => {
               value={formData.comment}
             />
             {/* <button className="submitLarge">Rückmeldung abschicken</button> */}
+            <button
+              className="submitLarge"
+              onClick={() => {
+                navigate("/userHome");
+              }}
+            >
+              Zurück zu mein Event
+            </button>
           </form>
         </div>
         <E2D2Footer/>

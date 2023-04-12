@@ -1,9 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
 import E2D2Footer from "./E2D2Footer.jsx";
 import styles from "../styles/forms.module.css";
+import "../styles/buttons.css";
 
 const E2D2EventCountdownPage = () => {
+  // useNavigate
+  const navigate = useNavigate();
+
   // useState
   const [invitation, setInvitation] = useState([]);
 
@@ -33,6 +38,16 @@ console.log("get invitation countdown -json:",json);
           <h2 className={styles.title}>{invitation.where}</h2>
           <h2 className={styles.title}> bis dahin ... </h2>
           <h2 className={styles.title}> Viele liebe Grüße {invitation.who}</h2>
+        </div>
+        <div className="buttonContainer">
+          <button
+              className="submitLarge"
+              onClick={() => {
+                navigate("/userHome");
+              }}
+            >
+              Zurück zu mein Event
+            </button>
         </div>
       </div>
       <E2D2Footer/>
