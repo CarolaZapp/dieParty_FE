@@ -27,8 +27,6 @@ const E2D2RegisterGuestMail = () => {
 
   // useParams
   const { eventId, userGuestId } = useParams();
-console.log("Param Reg eventId:", eventId);
-console.log("Param Reg userGuestId:", userGuestId);
 
   // handleChange
   const handleChange = (event) => {

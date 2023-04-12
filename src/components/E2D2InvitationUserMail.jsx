@@ -12,8 +12,6 @@ const E2D2InvitationUserMail = () => {
 
   // useParams
   const { eventId, userGuestId } = useParams();
-console.log("Param eventId:", eventId);
-console.log("Param userGuestId:", userGuestId);
 
   // handleClick
   const handleClickGuestRegister = () => {
@@ -33,7 +31,6 @@ console.log("Param userGuestId:", userGuestId);
     })
       .then((response) => response.json())
       .then((json) => {
-console.log("get invitation with ${eventId} -json:",json);
         setInvitation(json)}
     );
   }, []);

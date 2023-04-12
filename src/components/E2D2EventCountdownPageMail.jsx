@@ -8,9 +8,8 @@ const E2D2EventCountdownPageMail = () => {
   // useState
   const [invitation, setInvitation] = useState([]);
 
+  // useParams
   const { eventId } = useParams();
-  console.log("Param Count eventId:", eventId);
-
 
   // useEffect
   useEffect(() => {
@@ -22,7 +21,6 @@ const E2D2EventCountdownPageMail = () => {
     })
       .then((response) => response.json())
       .then((json) => {
-console.log("get invitation countdownMail $ -json:",json);
         setInvitation(json)});
   }, []);
 
