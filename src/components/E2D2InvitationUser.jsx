@@ -10,16 +10,6 @@ const E2D2InvitationUser = () => {
   // useNavigate
   const navigate = useNavigate();
 
-  // useParams
-//   const { eventId, userGuestId } = useParams();
-// console.log("Param eventId:", eventId);
-// console.log("Param userGuestId:", userGuestId);
-
-  // handleClick
-  // const handleClickGuestRegister = () => {
-  //   navigate(`/guestRegister/${eventId}/${userGuestId}`);
-  // };
-
   // useState
   const [invitation, setInvitation] = useState([]);
 
@@ -33,7 +23,6 @@ const E2D2InvitationUser = () => {
     })
       .then((response) => response.json())
       .then((json) => {
-console.log("get invitation ohne / -json:",json);
         setInvitation(json)}
     );
   }, []);
