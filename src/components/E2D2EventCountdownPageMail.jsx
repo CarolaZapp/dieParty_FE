@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { host } from "../api/host.jsx";
 import E2D2Footer from "./E2D2Footer.jsx";
@@ -7,9 +8,13 @@ const E2D2EventCountdownPageMail = () => {
   // useState
   const [invitation, setInvitation] = useState([]);
 
+  const { eventId } = useParams();
+  console.log("Param Count eventId:", eventId);
+
+
   // useEffect
   useEffect(() => {
-    fetch(`${host}/invitation/mail`, {
+    fetch(`${host}/invitation/${eventId}`, {
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -17,7 +22,7 @@ const E2D2EventCountdownPageMail = () => {
     })
       .then((response) => response.json())
       .then((json) => {
-console.log("get invitation countdownMail -json:",json);
+console.log("get invitation countdownMail $ -json:",json);
         setInvitation(json)});
   }, []);
 

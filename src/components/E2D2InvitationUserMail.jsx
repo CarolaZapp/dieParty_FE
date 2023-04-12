@@ -25,7 +25,7 @@ console.log("Param userGuestId:", userGuestId);
 
   // useEffect
   useEffect(() => {
-    fetch(`${host}/invitation/mail`, {
+    fetch(`${host}/invitation/${eventId}`, {
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -33,7 +33,7 @@ console.log("Param userGuestId:", userGuestId);
     })
       .then((response) => response.json())
       .then((json) => {
-console.log("get invitation with  /mail -json:",json);
+console.log("get invitation with ${eventId} -json:",json);
         setInvitation(json)}
     );
   }, []);
