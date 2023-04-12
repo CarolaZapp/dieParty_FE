@@ -48,34 +48,7 @@ const E2D2UserLogin = () => {
         }
       })
       .then((json) => {
-        console.log(json);
         navigate("/userHome");
-
-    
-
-
-        // if (!json.user.events) {
-        //   fetch(`${host}/event`, {
-        //     method: "POST",
-        //     body: JSON.stringify({
-        //       ...JSON.parse(sessionStorage.getItem("event")),
-        //       user: json.user._id,
-        //     }),
-        //     headers: {
-        //       "Content-type": "application/json; charset=UTF-8",
-        //     },
-        //   }).then((response) => {
-        //     if (response.ok) {
-        //       setFormData(Initial);
-        //       navigate("/userHome");
-        //     } else {
-        //       throw new Error("Fehler bei Event Anlage");
-        //     }
-        //   });
-        // } else {
-        //   setFormData(Initial);
-        //   navigate("/userHome");
-        // }
       })
       .catch(console.log);
   };
