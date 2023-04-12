@@ -71,7 +71,7 @@ console.log("Param Reg userGuestId:", userGuestId);
         }
         if (json.approved) {
           setFormData(Initial);
-          navigate(`/eventCountdownPage/:eventId`);
+          navigate(`/eventCountdownPage/${eventId}`);
         }
       });
   };
