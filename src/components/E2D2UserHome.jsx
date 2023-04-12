@@ -142,7 +142,7 @@ console.log("invitation home -json:",json);
               <button
                 className="userHome"
                 onClick={() => {
-                  navigate("/invitationUser/:eventId/:userGuestId");
+                  navigate("/invitationUser");
                 }}
               >
                 Einladung
@@ -150,7 +150,7 @@ console.log("invitation home -json:",json);
               <button
                 className="userHome"
                 onClick={() => {
-                  navigate("/guestRegister/:eventId/:userGuestId");
+                  navigate("/guestRegister");
                 }}
               >
                 Rückmeldung Gäste
@@ -158,7 +158,7 @@ console.log("invitation home -json:",json);
               <button
                 className="userHome"
                 onClick={() => {
-                  navigate("/eventCountdownPage/:eventId");
+                  navigate("/eventCountdownPage");
                 }}
               >
                 Bestätigung an Gäste

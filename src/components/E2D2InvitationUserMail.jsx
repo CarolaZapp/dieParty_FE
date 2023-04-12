@@ -6,26 +6,26 @@ import "../styles/invitation.css";
 import "../styles/invitationCreate.css";
 import "../styles/buttons.css";
 
-const E2D2InvitationUser = () => {
+const E2D2InvitationUserMail = () => {
   // useNavigate
   const navigate = useNavigate();
 
   // useParams
-//   const { eventId, userGuestId } = useParams();
-// console.log("Param eventId:", eventId);
-// console.log("Param userGuestId:", userGuestId);
+  const { eventId, userGuestId } = useParams();
+console.log("Param eventId:", eventId);
+console.log("Param userGuestId:", userGuestId);
 
   // handleClick
-  // const handleClickGuestRegister = () => {
-  //   navigate(`/guestRegister/${eventId}/${userGuestId}`);
-  // };
+  const handleClickGuestRegister = () => {
+    navigate(`/guestRegister/${eventId}/${userGuestId}`);
+  };
 
   // useState
   const [invitation, setInvitation] = useState([]);
 
   // useEffect
   useEffect(() => {
-    fetch(`${host}/invitation`, {
+    fetch(`${host}/invitation/mail`, {
       method: "GET",
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -33,7 +33,7 @@ const E2D2InvitationUser = () => {
     })
       .then((response) => response.json())
       .then((json) => {
-console.log("get invitation ohne / -json:",json);
+console.log("get invitation with  /mail -json:",json);
         setInvitation(json)}
     );
   }, []);
@@ -81,9 +81,9 @@ console.log("get invitation ohne / -json:",json);
           <h1>{invitation.moreComment}</h1>
         </div>
         <h3 className="bottom">{invitation.who}</h3>
-        {/* <button className="rueckmeldung" onClick={handleClickGuestRegister}>
+        <button className="rueckmeldung" onClick={handleClickGuestRegister}>
           Zur Rückmeldung
-        </button> */}
+        </button>
         <div className="belowBottom">
         <E2D2Footer/>
         </div>
@@ -93,4 +93,4 @@ console.log("get invitation ohne / -json:",json);
   );
 };
 
-export default E2D2InvitationUser;
+export default E2D2InvitationUserMail;

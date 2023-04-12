@@ -17,6 +17,7 @@ import E2D2UserInstruction from "./components/E2D2UserInstruction.jsx";
 import E2D2Invitation from "./components/E2D2Invitation.jsx";
 import E2D2InvitationCreate from "./components/E2D2InvitationCreate.jsx";
 import E2D2InvitationUser from "./components/E2D2InvitationUser.jsx";
+import E2D2InvitationUserMail from "./components/E2D2InvitationUserMail.jsx";
 
 // Event2 Design2 - Guestbook - not include at MVP
 // import E2D2Guestbook from "./components/E2D2Guestbook.jsx";
@@ -36,7 +37,9 @@ import E2D2ThanksUser from "./components/E2D2ThanksUser.jsx";
 // Event2 Design2 - Guest Forms and Reply
 import E2D2GuestListCreate from "./components/E2D2GuestListCreate.jsx";
 import E2D2GuestRegister from "./components/E2D2GuestRegister.jsx";
+import E2D2GuestRegisterMail from "./components/E2D2GuestRegisterMail.jsx";
 import E2D2EventCountdownPage from "./components/E2D2EventCountdownPage.jsx";
+import E2D2EventCountdownPageMail from "./components/E2D2EventCountdownPageMail.jsx";
 
 // Event2 Design2 - Data Tables
 import E2D2ContactListGuest from "./components/E2D2ContactListGuests.jsx";
@@ -100,10 +103,13 @@ function App() {
           }
         />
         <Route
-          path="/invitationUser/:eventId/:userGuestId"
+          path="/invitationUser"
           element={<E2D2InvitationUser />}
         />
-
+        <Route
+          path="/invitationUserMail/:eventId/:userGuestId"
+          element={<E2D2InvitationUserMail />}
+        />
         {/* // Event2 Design2 - Guestbook - not include at MVP */}
         {/* <Route path="/guestbook" element={<E2D2Guestbook />} />
         <Route path="/guestbookCreate" element={<E2D2GuestbookCreate />} />
@@ -124,12 +130,20 @@ function App() {
         {/* // Event2 Design2 - Guest Forms and Reply */}
         <Route path="/guestListCreate" element={<E2D2GuestListCreate />} />
         <Route
-          path="/guestRegister/:eventId/:userGuestId"
+          path="/guestRegister"
           element={<E2D2GuestRegister />}
         />
         <Route
-          path="/eventCountdownPage/:eventId"
+          path="/guestRegister/:eventId/:userGuestId"
+          element={<E2D2GuestRegisterMail />}
+        />
+        <Route
+          path="/eventCountdownPage"
           element={<E2D2EventCountdownPage />}
+        />
+        <Route
+          path="/eventCountdownPageMail/:eventId"
+          element={<E2D2EventCountdownPageMail />}
         />
 
         {/* // Event2 Design2 - Data Tables */}

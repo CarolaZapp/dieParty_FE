@@ -5,7 +5,7 @@ import styles from "../styles/forms.module.css";
 import "../styles/buttons.css";
 import E2D2Footer from "./E2D2Footer.jsx";
 
-const E2D2RegisterGuest = () => {
+const E2D2RegisterGuestMail = () => {
   // useNavigate
   const navigate = useNavigate();
 
@@ -27,6 +27,8 @@ const E2D2RegisterGuest = () => {
 
   // useParams
   const { eventId, userGuestId } = useParams();
+console.log("Param Reg eventId:", eventId);
+console.log("Param Reg userGuestId:", userGuestId);
 
   // handleChange
   const handleChange = (event) => {
@@ -250,7 +252,7 @@ const E2D2RegisterGuest = () => {
               onChange={handleChange}
               value={formData.comment}
             />
-            {/* <button className="submitLarge">Rückmeldung abschicken</button> */}
+            <button className="submitLarge">Rückmeldung abschicken</button>
           </form>
         </div>
         <E2D2Footer/>
@@ -259,4 +261,4 @@ const E2D2RegisterGuest = () => {
   );
 };
 
-export default E2D2RegisterGuest;
+export default E2D2RegisterGuestMail;
