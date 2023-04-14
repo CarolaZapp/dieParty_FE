@@ -19,7 +19,7 @@ const E2D1UserLogin = () => {
 
   // handleClick
   const handleClickRegister = () => {
-    navigate("/userRegisterD1");
+    // navigate("/userRegisterD1"); // as long design not ready
   };
 
   // handleChange
@@ -62,7 +62,8 @@ const E2D1UserLogin = () => {
           <h2 className={styles.title}>
             Zur weiteren Bearbeitung bitte anmelden!
           </h2>
-          <form className={styles.form} onSubmit={handleSubmit}>
+          {/* <form className={styles.form} onSubmit={handleSubmit}> // as long design not ready */}
+          <form className={styles.form}>
             <input
               className={styles.input}
               type="email"
@@ -70,7 +71,8 @@ const E2D1UserLogin = () => {
               placeholder="email@mail.com"
               onChange={handleChange}
               value={formData.email}
-              required
+              // required 
+              disabled  // as long design not ready
             />
 
             <input
@@ -80,7 +82,8 @@ const E2D1UserLogin = () => {
               placeholder="Passwort"
               onChange={handleChange}
               value={formData.password}
-              required
+              // required
+              disabled // as long design not ready
             />
             <button className="submit">Anmelden</button>
           </form>
@@ -99,10 +102,19 @@ const E2D1UserLogin = () => {
               noch nicht in Funktion! <br></br> Vielen Dank für Ihr Verständnis.
             </p>
           </div>
+          <div className="buttonContainer">
+          <button
+              className="submitLarge"
+              onClick={() => {
+                navigate("/chooseDesign");
+              }}
+            >
+              Zurück zur Auswahl
+            </button>
+        </div>
         </div>
         <E2D1Footer />
       </div>
-     
     </>
   );
 };
