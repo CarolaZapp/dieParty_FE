@@ -5,13 +5,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  width: 100%;
+  height:100%;
 }
 
 .containerUserHome {
-  position: relative;
-  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .leftStripe {
@@ -19,8 +19,6 @@
   color: var(--font-one);
   width: 25%;
   min-height: 100%;
-  position: absolute;
-  left: 0;
   display: flex;
   flex-direction: column;
 }
@@ -28,9 +26,7 @@
 .rightStripe {
   background-color: var(--bg-one);
   width: 50%;
-  min-height: 100%;
-  position: absolute;
-  right: 0;
+  min-height: 100vh;
 }
 
 .rightHeadline {
@@ -164,17 +160,25 @@ hr {
 /*  for smaller tablets and phones  - special-special*/
 /* I am not happy with this solution, but must be enough for MVP this time ... :-(  */
 @media screen and (max-width: 915px) {
+
+  .containerUserHome {
+    min-width: 320px;
+    max-width: 500px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
   .leftStripe {
     width: 100%;
-    height: min-content;
-    position: relative;
-    left: 0%;
     text-align: center;
   }
   .leftTitle {
     margin: 0;
     padding: 1rem 0 1rem 0;
     text-align: center;
+    font-size: 1.5rem;
   }
   .event {
     padding: 0;
@@ -182,16 +186,10 @@ hr {
 
   .rightStripe {
     width: 100%;
-    height: min-content;
-    position: relative;
-    left: 0;
     display: flex;
     flex-direction: column;
   }
-
-  .leftTitle {
-    font-size: 1.5rem;
-  }
+  
 }
 
 /*  for smaller tablets and phones  - special*/
