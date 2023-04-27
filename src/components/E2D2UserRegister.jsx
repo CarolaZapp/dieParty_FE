@@ -58,6 +58,11 @@ const E2D2UserRegister = () => {
 
   
   // handleClick
+
+  const handleClickPassword = ()=> {
+    return (alert('Bitte verwende ein sicheres Passwort! Es soll mindestens acht Zeichen enthalten, davon mindestens einen Kleinbuchstaben, mindestens einen Großbuchstaben, mindestens eine Zahl und mindestens ein Sonderzeichen.'))
+  };
+  
   const handleClickLogin = () => {
     navigate("/userLoginD2");
   };
@@ -187,6 +192,7 @@ const E2D2UserRegister = () => {
               type="password"
               name="password"
               placeholder="Passwort"
+              onClick={handleClickPassword}
               onChange={handleChange}
               value={formData.password}
               required

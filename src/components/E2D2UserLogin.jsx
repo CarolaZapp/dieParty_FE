@@ -44,7 +44,7 @@ const E2D2UserLogin = () => {
         if (response.ok) {
           return response.json();
         } else {
-          throw new Error(alert("Schon als Kunde registriert? Die Eingabe passt nicht zur Registrierung! Bitte zunächst registrieren!"));
+          throw new Error(alert("Schon als Kunde registriert? Die Eingabe passt nicht zu einer bestehenden Registrierung! Bitte zunächst registrieren!"));
         }
       })
       .then((json) => {

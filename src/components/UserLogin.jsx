@@ -48,7 +48,7 @@ const UserLogin = () => {
         if (response.ok) {
           return response.json();
         } else {
-          throw new Error(alert("Schon als Kunde registriert? Die Eingabe passt nicht zur Registrierung! Bitte zunächst eine Designvorlage auswählen und registrieren! Danke!"));
+          throw new Error(alert("Schon als Kunde registriert? Die Eingabe passt nicht zu einer bestehenden Registrierung! Bitte zunächst eine Designvorlage auswählen und dann registrieren! Danke!"));
         }
       })
       .then((json) => {
