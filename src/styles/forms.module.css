@@ -119,6 +119,12 @@ hr {
   padding-bottom: 1rem;
 }
 
+.password  {
+  font-size: 0.6rem;
+  color: var(--font-one);
+  text-align: center;
+}
+
 .underDevelopment p {
   color: var(--font-one);
   text-align: center;

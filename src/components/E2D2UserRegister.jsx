@@ -191,6 +191,7 @@ const E2D2UserRegister = () => {
               value={formData.password}
               required
             />
+            <p className={styles.password}>Das Passwort soll mindestens acht Zeichen enthalten, davon mindestens einen Kleinbuchstaben, mindestens einen Großbuchstaben, mindestens eine Zahl und mindestens ein Sonderzeichen (z.B.: ! § $ % & / = ? + #). Danke!</p>
             <button className="submit">Registrieren</button>
           </form>
           <div className={styles.navTo}>
