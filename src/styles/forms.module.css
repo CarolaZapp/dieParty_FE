@@ -82,6 +82,7 @@ hr {
 .select {
   cursor: pointer;
   padding: 0.5rem;
+  margin:0.5rem;
   border: 0;
   color: var(--font-four);
   background-color: var(--bg-ten);
@@ -204,11 +205,9 @@ hr {
 .rightSideD2 {
   width: 50%;
   margin-left: 50%;
-  padding-bottom: 7rem;
-}
-
-.rightSideD2 {
+  min-height:100vh;
   background-color: var(--bg-one);
+  padding-bottom: 2rem;
 }
 
 .create {
@@ -260,8 +259,8 @@ hr {
 @media screen and (max-width: 859px) {
   .rightSideD2 {
     width: 100%;
-    min-height: 100vh;
     margin: 0;
+    padding-bottom: 7rem;
   }
 }
 
@@ -277,6 +276,10 @@ hr {
   }
 }
 
-/* not used here */
 /* for small phones - special */
-/* @media screen and (max-width: 529px) {} */
+@media screen and (max-width: 529px) {
+
+  .rightSideD2 {
+  padding-bottom: 9rem;
+}
+}
