@@ -28,7 +28,7 @@
 }
 
 .backgroundFade {
-  background: var(--bg-two-a);
+  background-color: var(--bg-two-a);
   min-height: 100vh;
 }
 
