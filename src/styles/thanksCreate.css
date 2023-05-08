@@ -1,20 +1,16 @@
 /* desktop */
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: absolute;
-  bottom: 0;
-  left: 100%;
-  right: 0;
-  overflow: hidden;
-  transition: 0.5s ease;
-}
-
-.containerThanks:hover .overlay {
+.containerThanks {
+  position: relative;
   width: 100%;
-  left: 0;
 }
+
+.right-part{
+  width: 100%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+
 
 .bottom-text h3 {
   margin: 0;
@@ -31,17 +27,15 @@
 
 /* without slide */
 /*  for smaller tablets and phones  - special*/
+
 @media screen and (max-width: 859px) {
-  .overlay {
+  .right-part {
     width: 100%;
     height: min-content;
     position: relative;
     left: 0%;
-    display: flex;
-    flex-direction: column;
   }
 }
-
 /* not used here */
 /* for phones  - special*/
 /* @media screen and (max-width: 694px) {} */

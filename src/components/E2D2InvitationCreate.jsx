@@ -70,12 +70,12 @@ const E2D2InvitationCreate = ({ invitation, setInvitation }) => {
         <h3 className="bottom">
           {invitation.who === "" ? "Hanna & Jan" : invitation.who}
         </h3>
-        <div className="belowBottom">
-        <E2D2Footer/>
-        </div>
       </div>
-      <div className="overlay">
+      <div className="right-part">
         <E2D2InvitationCreateSlide setInvitation={setInvitation} />
+      </div>
+      <div className="belowBottom">
+        <E2D2Footer/>
       </div>
     </div>
     </>

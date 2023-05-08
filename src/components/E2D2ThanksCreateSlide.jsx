@@ -48,9 +48,6 @@ const E2D2ThanksCreateSlide = () => {
   // handleSubmit
   const handleSubmit = (event) => {
     event.preventDefault();
-    // const data = new FormData();
-
-    // Object.keys(formData).forEach((key) => data.append(key, formData[key]));
     console.log(formData);
     fetch(`${host}/thanks`, {
       method: "POST",
