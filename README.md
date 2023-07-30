@@ -1,4 +1,5 @@
 # FE_dieParty
+![Screenshot 2023-07-30 092149](https://github.com/CarolaZapp/dieParty_FE/assets/101559000/f7e65ead-e6dc-4b37-9151-d98e82c510ad)
 
 This Fullstack final project is devided in two parts...
 
